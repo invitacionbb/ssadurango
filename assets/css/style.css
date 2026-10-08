@@ -143,13 +143,10 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
-@media (max-width: 1024px) {
-  .fixed-bg-section {
-    background-attachment: scroll;
-  }
-}
 
 /* Carrusel Hero: Filtro con degradado azul al 30% de opacidad */
 .bg-slide-1 {
