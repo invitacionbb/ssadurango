@@ -449,153 +449,178 @@
       </p>
     </div>
 
-    <!-- Grid de 6 Tarjetas Claras -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+    <!-- Contenedor: Carrusel en Celular (<768px) / Bento Grid en Desktop (>=768px) -->
+    <div class="services-swiper relative">
+      <div class="swiper-wrapper services-grid-wrapper">
 
-      <!-- Servicio 1: Mantenimiento Preventivo y Correctivo (Prioridad del Cliente) -->
-      <div class="light-card light-card-hover rounded-2xl p-6 sm:p-8 flex flex-col justify-between relative group border-t-4 border-t-emerald-500 reveal-scale delay-100">
-        <div class="space-y-4">
-          <div class="w-12 sm:w-14 h-12 sm:h-14 rounded-2xl bg-emerald-50 border border-emerald-200 flex items-center justify-center text-emerald-600 group-hover:scale-110 transition-transform">
-            <i data-lucide="wrench" class="w-6 sm:w-7 h-6 sm:h-7"></i>
+        <!-- Servicio 1: Mantenimiento Preventivo y Correctivo (Prioridad del Cliente) -->
+        <div class="swiper-slide h-auto">
+          <div class="light-card light-card-hover rounded-2xl p-6 sm:p-8 flex flex-col justify-between h-full relative group border-t-4 border-t-emerald-500 reveal-scale delay-100">
+            <div class="space-y-4">
+              <div class="w-12 sm:w-14 h-12 sm:h-14 rounded-2xl bg-emerald-50 border border-emerald-200 flex items-center justify-center text-emerald-600 group-hover:scale-110 transition-transform">
+                <i data-lucide="wrench" class="w-6 sm:w-7 h-6 sm:h-7"></i>
+              </div>
+              <h3 class="text-xl sm:text-2xl font-bold text-[#0B2545] font-heading">Mantenimiento Preventivo y Correctivo</h3>
+              <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                Servicio técnico integral y urgente para portones de todas las marcas. Prolonga la vida útil de tus equipos, evita atascos repentinos y asegura su rendimiento óptimo.
+              </p>
+              <ul class="space-y-2 text-xs text-slate-500 pt-2 border-t border-slate-100">
+                <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 shrink-0"></i> Calibración de fuerza y final de carrera</li>
+                <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 shrink-0"></i> Lubricación especializada de rieles y engranes</li>
+                <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 shrink-0"></i> Reparación de fallas electrónicas y mecánicas</li>
+              </ul>
+            </div>
+            <div class="pt-6 mt-6 border-t border-slate-100">
+              <button onclick="quoteService('Mantenimiento Preventivo y Correctivo')" class="w-full py-2.5 rounded-xl bg-slate-50 hover:bg-emerald-600 hover:text-white text-[#0B2545] font-bold text-xs sm:text-sm border border-slate-200 transition-colors flex items-center justify-center gap-2">
+                <span>Solicitar Mantenimiento</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </button>
+            </div>
           </div>
-          <h3 class="text-xl sm:text-2xl font-bold text-[#0B2545] font-heading">Mantenimiento Preventivo y Correctivo</h3>
-          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
-            Servicio técnico integral y urgente para portones de todas las marcas. Prolonga la vida útil de tus equipos, evita atascos repentinos y asegura su rendimiento óptimo.
-          </p>
-          <ul class="space-y-2 text-xs text-slate-500 pt-2 border-t border-slate-100">
-            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 shrink-0"></i> Calibración de fuerza y final de carrera</li>
-            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 shrink-0"></i> Lubricación especializada de rieles y engranes</li>
-            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 shrink-0"></i> Reparación de fallas electrónicas y mecánicas</li>
-          </ul>
         </div>
-        <div class="pt-6 mt-6 border-t border-slate-100">
-          <button onclick="quoteService('Mantenimiento Preventivo y Correctivo')" class="w-full py-2.5 rounded-xl bg-slate-50 hover:bg-emerald-600 hover:text-white text-[#0B2545] font-bold text-xs sm:text-sm border border-slate-200 transition-colors flex items-center justify-center gap-2">
-            <span>Solicitar Mantenimiento</span>
-            <i data-lucide="arrow-right" class="w-4 h-4"></i>
-          </button>
+
+        <!-- Servicio 2: Fabricación e Instalación de Portones -->
+        <div class="swiper-slide h-auto">
+          <div class="light-card light-card-hover rounded-2xl p-6 sm:p-8 flex flex-col justify-between h-full relative group border-t-4 border-t-brand-blue reveal-scale delay-200">
+            <div class="space-y-4">
+              <div class="w-12 sm:w-14 h-12 sm:h-14 rounded-2xl bg-blue-50 border border-blue-200 flex items-center justify-center text-brand-blue group-hover:scale-110 transition-transform">
+                <i data-lucide="warehouse" class="w-6 sm:w-7 h-6 sm:h-7"></i>
+              </div>
+              <h3 class="text-xl sm:text-2xl font-bold text-[#0B2545] font-heading">Fabricación e Instalación de Portones</h3>
+              <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                Portones corredizos sobre barda, seccionales, abatibles y ascendentes. Diseños a la medida fabricados en acero reforzado con acabados de primera calidad.
+              </p>
+              <ul class="space-y-2 text-xs text-slate-500 pt-2 border-t border-slate-100">
+                <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-brand-blue shrink-0"></i> Motores de alta resistencia y durabilidad</li>
+                <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-brand-blue shrink-0"></i> Baterías de respaldo ante apagones</li>
+                <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-brand-blue shrink-0"></i> Sensores y fotoceldas de seguridad anti-impacto</li>
+              </ul>
+            </div>
+            <div class="pt-6 mt-6 border-t border-slate-100">
+              <button onclick="quoteService('Fabricación e Instalación de Portones')" class="w-full py-2.5 rounded-xl bg-slate-50 hover:bg-brand-blue hover:text-white text-[#0B2545] font-bold text-xs sm:text-sm border border-slate-200 transition-colors flex items-center justify-center gap-2">
+                <span>Cotizar Portón</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
         </div>
+
+        <!-- Servicio 3: Acceso para Fraccionamientos y Privadas (Nuevo) -->
+        <div class="swiper-slide h-auto">
+          <div class="light-card light-card-hover rounded-2xl p-6 sm:p-8 flex flex-col justify-between h-full relative group border-t-4 border-t-sky-500 reveal-scale delay-300">
+            <div class="space-y-4">
+              <div class="w-12 sm:w-14 h-12 sm:h-14 rounded-2xl bg-sky-50 border border-sky-200 flex items-center justify-center text-sky-600 group-hover:scale-110 transition-transform">
+                <i data-lucide="building-2" class="w-6 sm:w-7 h-6 sm:h-7"></i>
+              </div>
+              <h3 class="text-xl sm:text-2xl font-bold text-[#0B2545] font-heading">Acceso para Fraccionamientos y Privadas</h3>
+              <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                Barreras vehiculares de alto flujo, lectores de Tag RFID para residentes, tarjetas de proximidad y contratos de mantenimiento preventivo para privadas en Durango.
+              </p>
+              <ul class="space-y-2 text-xs text-slate-500 pt-2 border-t border-slate-100">
+                <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-sky-600 shrink-0"></i> Barreras automáticas de ciclo continuo</li>
+                <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-sky-600 shrink-0"></i> Control vehicular con Tag RFID y proximidad</li>
+                <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-sky-600 shrink-0"></i> Pólizas mensuales para administradores</li>
+              </ul>
+            </div>
+            <div class="pt-6 mt-6 border-t border-slate-100">
+              <button onclick="quoteService('Acceso para Fraccionamientos y Privadas')" class="w-full py-2.5 rounded-xl bg-slate-50 hover:bg-sky-600 hover:text-white text-[#0B2545] font-bold text-xs sm:text-sm border border-slate-200 transition-colors flex items-center justify-center gap-2">
+                <span>Cotizar para Privada</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Servicio 4: Herrería Residencial & Corte CNC -->
+        <div class="swiper-slide h-auto">
+          <div class="light-card light-card-hover rounded-2xl p-6 sm:p-8 flex flex-col justify-between h-full relative group border-t-4 border-t-amber-500 reveal-scale delay-100">
+            <div class="space-y-4">
+              <div class="w-12 sm:w-14 h-12 sm:h-14 rounded-2xl bg-amber-50 border border-amber-200 flex items-center justify-center text-brand-yellow group-hover:scale-110 transition-transform">
+                <i data-lucide="gem" class="w-6 sm:w-7 h-6 sm:h-7"></i>
+              </div>
+              <h3 class="text-xl sm:text-2xl font-bold text-[#0B2545] font-heading">Herrería Residencial & Corte CNC</h3>
+              <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                Portones con celosías cortadas en láser CNC, puertas residenciales de alta seguridad, barandales y cancelería moderna con pintura electrostática horneada.
+              </p>
+              <ul class="space-y-2 text-xs text-slate-500 pt-2 border-t border-slate-100">
+                <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-amber-500 shrink-0"></i> Celosías con diseños exclusivos en láser CNC</li>
+                <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-amber-500 shrink-0"></i> Acero estructural de calibre pesado</li>
+                <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-amber-500 shrink-0"></i> Pintura horneada y acabados tipo madera</li>
+              </ul>
+            </div>
+            <div class="pt-6 mt-6 border-t border-slate-100">
+              <button onclick="quoteService('Herrería Residencial & Corte CNC')" class="w-full py-2.5 rounded-xl bg-slate-50 hover:bg-amber-500 hover:text-slate-950 text-[#0B2545] font-bold text-xs sm:text-sm border border-slate-200 transition-colors flex items-center justify-center gap-2">
+                <span>Cotizar Herrería & CNC</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Servicio 5: Cerraduras Digitales & Control Smart -->
+        <div class="swiper-slide h-auto">
+          <div class="light-card light-card-hover rounded-2xl p-6 sm:p-8 flex flex-col justify-between h-full relative group border-t-4 border-t-brand-orange reveal-scale delay-200">
+            <div class="space-y-4">
+              <div class="w-12 sm:w-14 h-12 sm:h-14 rounded-2xl bg-orange-50 border border-orange-200 flex items-center justify-center text-brand-orange group-hover:scale-110 transition-transform">
+                <i data-lucide="key-round" class="w-6 sm:w-7 h-6 sm:h-7"></i>
+              </div>
+              <h3 class="text-xl sm:text-2xl font-bold text-[#0B2545] font-heading">Cerraduras Digitales & Control Smart</h3>
+              <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                Chapas electrónicas para puertas de acceso. Apertura por huella dactilar, app celular, código numérico y tarjeta RFID. Monitoreo en tiempo real.
+              </p>
+              <ul class="space-y-2 text-xs text-slate-500 pt-2 border-t border-slate-100">
+                <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-brand-orange shrink-0"></i> Apertura biométrica ultra-rápida (0.3s)</li>
+                <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-brand-orange shrink-0"></i> Códigos dinámicos temporales para visitas</li>
+                <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-brand-orange shrink-0"></i> Registro de entradas en tu smartphone</li>
+              </ul>
+            </div>
+            <div class="pt-6 mt-6 border-t border-slate-100">
+              <button onclick="quoteService('Cerraduras Digitales & Control Smart')" class="w-full py-2.5 rounded-xl bg-slate-50 hover:bg-brand-orange hover:text-white text-[#0B2545] font-bold text-xs sm:text-sm border border-slate-200 transition-colors flex items-center justify-center gap-2">
+                <span>Cotizar Cerradura Smart</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Servicio 6: Instalación y Mantenimiento de Minisplits (Reemplaza Iluminación) -->
+        <div class="swiper-slide h-auto">
+          <div class="light-card light-card-hover rounded-2xl p-6 sm:p-8 flex flex-col justify-between h-full relative group border-t-4 border-t-cyan-500 reveal-scale delay-300">
+            <div class="space-y-4">
+              <div class="w-12 sm:w-14 h-12 sm:h-14 rounded-2xl bg-cyan-50 border border-cyan-200 flex items-center justify-center text-cyan-600 group-hover:scale-110 transition-transform">
+                <i data-lucide="snowflake" class="w-6 sm:w-7 h-6 sm:h-7"></i>
+              </div>
+              <h3 class="text-xl sm:text-2xl font-bold text-[#0B2545] font-heading">Instalación y Mantenimiento de Minisplits</h3>
+              <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                Servicio técnico profesional en climatización: instalación estética nivelada, mantenimiento preventivo con lavado a presión y recarga de refrigerante ecológico.
+              </p>
+              <ul class="space-y-2 text-xs text-slate-500 pt-2 border-t border-slate-100">
+                <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-600 shrink-0"></i> Instalación certificada libre de fugas</li>
+                <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-600 shrink-0"></i> Lavado profundo y desinfección de turbina</li>
+                <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-600 shrink-0"></i> Diagnóstico eléctrico y recarga de gas</li>
+              </ul>
+            </div>
+            <div class="pt-6 mt-6 border-t border-slate-100">
+              <button onclick="quoteService('Instalación y Mantenimiento de Minisplits')" class="w-full py-2.5 rounded-xl bg-slate-50 hover:bg-cyan-600 hover:text-white text-[#0B2545] font-bold text-xs sm:text-sm border border-slate-200 transition-colors flex items-center justify-center gap-2">
+                <span>Cotizar Minisplit</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
       </div>
 
-      <!-- Servicio 2: Fabricación e Instalación de Portones -->
-      <div class="light-card light-card-hover rounded-2xl p-6 sm:p-8 flex flex-col justify-between relative group border-t-4 border-t-brand-blue reveal-scale delay-200">
-        <div class="space-y-4">
-          <div class="w-12 sm:w-14 h-12 sm:h-14 rounded-2xl bg-blue-50 border border-blue-200 flex items-center justify-center text-brand-blue group-hover:scale-110 transition-transform">
-            <i data-lucide="warehouse" class="w-6 sm:w-7 h-6 sm:h-7"></i>
-          </div>
-          <h3 class="text-xl sm:text-2xl font-bold text-[#0B2545] font-heading">Fabricación e Instalación de Portones</h3>
-          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
-            Portones corredizos sobre barda, seccionales, abatibles y ascendentes. Diseños a la medida fabricados en acero reforzado con acabados de primera calidad.
-          </p>
-          <ul class="space-y-2 text-xs text-slate-500 pt-2 border-t border-slate-100">
-            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-brand-blue shrink-0"></i> Motores de alta resistencia y durabilidad</li>
-            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-brand-blue shrink-0"></i> Baterías de respaldo ante apagones</li>
-            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-brand-blue shrink-0"></i> Sensores y fotoceldas de seguridad anti-impacto</li>
-          </ul>
-        </div>
-        <div class="pt-6 mt-6 border-t border-slate-100">
-          <button onclick="quoteService('Fabricación e Instalación de Portones')" class="w-full py-2.5 rounded-xl bg-slate-50 hover:bg-brand-blue hover:text-white text-[#0B2545] font-bold text-xs sm:text-sm border border-slate-200 transition-colors flex items-center justify-center gap-2">
-            <span>Cotizar Portón</span>
-            <i data-lucide="arrow-right" class="w-4 h-4"></i>
-          </button>
-        </div>
+      <!-- Controles de Navegación Sólo en Móvil (Flechas Izquierda / Derecha + Paginación) -->
+      <div class="flex md:hidden items-center justify-between gap-4 mt-8 px-2 max-w-xs mx-auto">
+        <button type="button" class="services-prev-btn w-12 h-12 rounded-full bg-white text-[#0B2545] shadow-lg border border-slate-200 flex items-center justify-center hover:bg-brand-orange hover:text-white active:scale-90 transition-all disabled:opacity-30 disabled:pointer-events-none" aria-label="Servicio anterior">
+          <i data-lucide="chevron-left" class="w-6 h-6"></i>
+        </button>
+        <div class="services-swiper-pagination flex justify-center items-center gap-1.5 flex-1"></div>
+        <button type="button" class="services-next-btn w-12 h-12 rounded-full bg-white text-[#0B2545] shadow-lg border border-slate-200 flex items-center justify-center hover:bg-brand-orange hover:text-white active:scale-90 transition-all disabled:opacity-30 disabled:pointer-events-none" aria-label="Siguiente servicio">
+          <i data-lucide="chevron-right" class="w-6 h-6"></i>
+        </button>
       </div>
-
-      <!-- Servicio 3: Acceso para Fraccionamientos y Privadas (Nuevo) -->
-      <div class="light-card light-card-hover rounded-2xl p-6 sm:p-8 flex flex-col justify-between relative group border-t-4 border-t-sky-500 reveal-scale delay-300">
-        <div class="space-y-4">
-          <div class="w-12 sm:w-14 h-12 sm:h-14 rounded-2xl bg-sky-50 border border-sky-200 flex items-center justify-center text-sky-600 group-hover:scale-110 transition-transform">
-            <i data-lucide="building-2" class="w-6 sm:w-7 h-6 sm:h-7"></i>
-          </div>
-          <h3 class="text-xl sm:text-2xl font-bold text-[#0B2545] font-heading">Acceso para Fraccionamientos y Privadas</h3>
-          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
-            Barreras vehiculares de alto flujo, lectores de Tag RFID para residentes, tarjetas de proximidad y contratos de mantenimiento preventivo para privadas en Durango.
-          </p>
-          <ul class="space-y-2 text-xs text-slate-500 pt-2 border-t border-slate-100">
-            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-sky-600 shrink-0"></i> Barreras automáticas de ciclo continuo</li>
-            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-sky-600 shrink-0"></i> Control vehicular con Tag RFID y proximidad</li>
-            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-sky-600 shrink-0"></i> Pólizas mensuales para administradores</li>
-          </ul>
-        </div>
-        <div class="pt-6 mt-6 border-t border-slate-100">
-          <button onclick="quoteService('Acceso para Fraccionamientos y Privadas')" class="w-full py-2.5 rounded-xl bg-slate-50 hover:bg-sky-600 hover:text-white text-[#0B2545] font-bold text-xs sm:text-sm border border-slate-200 transition-colors flex items-center justify-center gap-2">
-            <span>Cotizar para Privada</span>
-            <i data-lucide="arrow-right" class="w-4 h-4"></i>
-          </button>
-        </div>
-      </div>
-
-      <!-- Servicio 4: Herrería Residencial & Corte CNC -->
-      <div class="light-card light-card-hover rounded-2xl p-6 sm:p-8 flex flex-col justify-between relative group border-t-4 border-t-amber-500 reveal-scale delay-100">
-        <div class="space-y-4">
-          <div class="w-12 sm:w-14 h-12 sm:h-14 rounded-2xl bg-amber-50 border border-amber-200 flex items-center justify-center text-brand-yellow group-hover:scale-110 transition-transform">
-            <i data-lucide="gem" class="w-6 sm:w-7 h-6 sm:h-7"></i>
-          </div>
-          <h3 class="text-xl sm:text-2xl font-bold text-[#0B2545] font-heading">Herrería Residencial & Corte CNC</h3>
-          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
-            Portones con celosías cortadas en láser CNC, puertas residenciales de alta seguridad, barandales y cancelería moderna con pintura electrostática horneada.
-          </p>
-          <ul class="space-y-2 text-xs text-slate-500 pt-2 border-t border-slate-100">
-            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-amber-500 shrink-0"></i> Celosías con diseños exclusivos en láser CNC</li>
-            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-amber-500 shrink-0"></i> Acero estructural de calibre pesado</li>
-            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-amber-500 shrink-0"></i> Pintura horneada y acabados tipo madera</li>
-          </ul>
-        </div>
-        <div class="pt-6 mt-6 border-t border-slate-100">
-          <button onclick="quoteService('Herrería Residencial & Corte CNC')" class="w-full py-2.5 rounded-xl bg-slate-50 hover:bg-amber-500 hover:text-slate-950 text-[#0B2545] font-bold text-xs sm:text-sm border border-slate-200 transition-colors flex items-center justify-center gap-2">
-            <span>Cotizar Herrería & CNC</span>
-            <i data-lucide="arrow-right" class="w-4 h-4"></i>
-          </button>
-        </div>
-      </div>
-
-      <!-- Servicio 5: Cerraduras Digitales & Control Smart -->
-      <div class="light-card light-card-hover rounded-2xl p-6 sm:p-8 flex flex-col justify-between relative group border-t-4 border-t-brand-orange reveal-scale delay-200">
-        <div class="space-y-4">
-          <div class="w-12 sm:w-14 h-12 sm:h-14 rounded-2xl bg-orange-50 border border-orange-200 flex items-center justify-center text-brand-orange group-hover:scale-110 transition-transform">
-            <i data-lucide="key-round" class="w-6 sm:w-7 h-6 sm:h-7"></i>
-          </div>
-          <h3 class="text-xl sm:text-2xl font-bold text-[#0B2545] font-heading">Cerraduras Digitales & Control Smart</h3>
-          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
-            Chapas electrónicas para puertas de acceso. Apertura por huella dactilar, app celular, código numérico y tarjeta RFID. Monitoreo en tiempo real.
-          </p>
-          <ul class="space-y-2 text-xs text-slate-500 pt-2 border-t border-slate-100">
-            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-brand-orange shrink-0"></i> Apertura biométrica ultra-rápida (0.3s)</li>
-            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-brand-orange shrink-0"></i> Códigos dinámicos temporales para visitas</li>
-            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-brand-orange shrink-0"></i> Registro de entradas en tu smartphone</li>
-          </ul>
-        </div>
-        <div class="pt-6 mt-6 border-t border-slate-100">
-          <button onclick="quoteService('Cerraduras Digitales & Control Smart')" class="w-full py-2.5 rounded-xl bg-slate-50 hover:bg-brand-orange hover:text-white text-[#0B2545] font-bold text-xs sm:text-sm border border-slate-200 transition-colors flex items-center justify-center gap-2">
-            <span>Cotizar Cerradura Smart</span>
-            <i data-lucide="arrow-right" class="w-4 h-4"></i>
-          </button>
-        </div>
-      </div>
-
-      <!-- Servicio 6: Instalación y Mantenimiento de Minisplits (Reemplaza Iluminación) -->
-      <div class="light-card light-card-hover rounded-2xl p-6 sm:p-8 flex flex-col justify-between relative group border-t-4 border-t-cyan-500 reveal-scale delay-300">
-        <div class="space-y-4">
-          <div class="w-12 sm:w-14 h-12 sm:h-14 rounded-2xl bg-cyan-50 border border-cyan-200 flex items-center justify-center text-cyan-600 group-hover:scale-110 transition-transform">
-            <i data-lucide="snowflake" class="w-6 sm:w-7 h-6 sm:h-7"></i>
-          </div>
-          <h3 class="text-xl sm:text-2xl font-bold text-[#0B2545] font-heading">Instalación y Mantenimiento de Minisplits</h3>
-          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
-            Servicio técnico profesional en climatización: instalación estética nivelada, mantenimiento preventivo con lavado a presión y recarga de refrigerante ecológico.
-          </p>
-          <ul class="space-y-2 text-xs text-slate-500 pt-2 border-t border-slate-100">
-            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-600 shrink-0"></i> Instalación certificada libre de fugas</li>
-            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-600 shrink-0"></i> Lavado profundo y desinfección de turbina</li>
-            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-600 shrink-0"></i> Diagnóstico eléctrico y recarga de gas</li>
-          </ul>
-        </div>
-        <div class="pt-6 mt-6 border-t border-slate-100">
-          <button onclick="quoteService('Instalación y Mantenimiento de Minisplits')" class="w-full py-2.5 rounded-xl bg-slate-50 hover:bg-cyan-600 hover:text-white text-[#0B2545] font-bold text-xs sm:text-sm border border-slate-200 transition-colors flex items-center justify-center gap-2">
-            <span>Cotizar Minisplit</span>
-            <i data-lucide="arrow-right" class="w-4 h-4"></i>
-          </button>
-        </div>
-      </div>
-
     </div>
   </div>
   </section>
