@@ -195,6 +195,36 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // 4.1 Carrusel de Servicios para Celular (< 768px)
+  let servicesSwiper = null;
+  const servicesSwiperEl = document.querySelector('.services-swiper');
+  if (servicesSwiperEl && typeof Swiper !== 'undefined') {
+    servicesSwiper = new Swiper('.services-swiper', {
+      slidesPerView: 1.06,
+      spaceBetween: 16,
+      grabCursor: true,
+      speed: 400,
+      navigation: {
+        nextEl: '.services-next-btn',
+        prevEl: '.services-prev-btn',
+      },
+      pagination: {
+        el: '.services-swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        768: {
+          enabled: false,
+        }
+      }
+    });
+
+    if (typeof lucide !== 'undefined') {
+      lucide.createIcons();
+    }
+  }
+
+
   // 5. Navbar Sticky Effect on Scroll
   const navbar = document.getElementById('main-nav');
   window.addEventListener('scroll', () => {
