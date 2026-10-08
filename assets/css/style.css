@@ -1,0 +1,530 @@
+/* ==========================================================================
+   SSA DURANGO - Servicios, Soluciones y Automatización
+   Nueva Paleta de Colores Clara (Gris Cemento, Azul Oscuro, Azul Rey/Cielo y Naranja)
+   ========================================================================== */
+
+/* Variables del Sistema de Diseño Claro */
+:root {
+  /* Paleta Solicitada por el Usuario */
+  --color-bg-cement: #EEF2F6;          /* Gris cemento claro de fondo general */
+  --color-bg-cement-dark: #E2E8F0;     /* Gris cemento intermedio para contrastes */
+  --color-card-white: #FFFFFF;         /* Blanco puro para tarjetas */
+  --color-text-dark-blue: #0B2545;     /* Azul oscuro para títulos principales */
+  --color-text-dark-gray: #475569;     /* Gris oscuro para subtítulos y párrafos */
+  --color-text-muted: #64748B;         /* Gris slate para textos secundarios */
+  
+  --color-primary-blue: #0066FF;       /* Azul Rey vibrante */
+  --color-royal-blue: #1D4ED8;         /* Azul Rey profundo */
+  --color-sky-blue: #0284C7;           /* Azul Cielo para acentos y tarjetas */
+  --color-sky-blue-light: #E0F2FE;     /* Azul Cielo suave de fondo */
+  --color-sky-blue-subtle: #F0F7FF;    /* Azul Cielo ultraclaro */
+  
+  --color-accent-orange: #FF6600;      /* Anaranjado vibrante para botones y CTA */
+  --color-accent-orange-hover: #E65C00;/* Anaranjado hover */
+  --color-accent-yellow: #F59E0B;      /* Amarillo/Ámbar para iluminación */
+  
+  --color-border-light: #CBD5E1;       /* Bordes sutiles claros */
+  --color-border-blue: #93C5FD;        /* Bordes azul cielo */
+
+  /* Fuentes */
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+
+  /* Fondos Reemplazables */
+  --bg-hero-1: url('../images/backgrounds/bg-hero-slide-1.jpg');
+  --bg-hero-2: url('../images/backgrounds/bg-hero-slide-2.jpg');
+  --bg-hero-3: url('../images/backgrounds/bg-hero-slide-3.jpg');
+  --bg-hero-4: url('../images/backgrounds/bg-hero-slide-4.jpg');
+  --bg-hero-5: url('../images/backgrounds/bg-hero-slide-5.jpg');
+  --bg-services: url('../images/backgrounds/bg-servicios.jpg');
+  --bg-premium-celosias: url('../images/backgrounds/bg-premium-celosias.jpg');
+  --bg-smart-locks: url('../images/backgrounds/bg-smart-locks.jpg');
+  --bg-gate-motors: url('../images/backgrounds/bg-gate-motors.jpg');
+  --bg-fraccionamientos: url('../images/backgrounds/bg-fraccionamientos.jpg');
+  --bg-climas: url('../images/backgrounds/bg-smart-locks.jpg');
+  --bg-mantenimiento: url('../images/backgrounds/bg-mantenimiento.jpg');
+  --bg-red-aliados: url('../images/backgrounds/bg-herrero.jpg');
+  --bg-herrero: url('../images/backgrounds/bg-herrero.jpg');
+  --bg-led-lighting: url('../images/backgrounds/bg-led-lighting.jpg');
+  --bg-proceso: url('../images/backgrounds/bg-proceso.jpg');
+  --bg-quote-cta: url('../images/backgrounds/bg-quote-cta.jpg');
+  --bg-testimonios: url('../images/backgrounds/bg-testimonios.jpg');
+  --bg-contacto: url('../images/backgrounds/bg-contacto.jpg');
+  --bg-footer: url('../images/backgrounds/bg-footer.jpg');
+}
+
+/* Tipografía y Base */
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg-cement);
+  color: var(--color-text-dark-gray);
+  overflow-x: hidden;
+  width: 100%;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: var(--font-heading);
+  color: var(--color-text-dark-blue);
+}
+
+/* Scrollbar Personalizado */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #E2E8F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #94A3B8;
+  border-radius: 4px;
+  border: 2px solid #E2E8F0;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-blue);
+}
+
+/* ==========================================================================
+   BARRIDO LENTO (LASER SWEEP BEAM)
+   ========================================================================== */
+#sweep-laser {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, #0066FF, #FF6600, #0284C7, #0066FF);
+  background-size: 200% 100%;
+  box-shadow: 0 0 16px rgba(0, 102, 255, 0.8), 0 0 8px rgba(255, 102, 0, 0.6);
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0;
+  transition: width 1.1s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.3s ease;
+}
+
+#sweep-laser.active {
+  opacity: 1;
+  width: 100%;
+  animation: laserGlow 1.1s linear infinite;
+}
+
+@keyframes laserGlow {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+/* Resplandor de sección al llegar por navegación */
+.target-section-sweep {
+  animation: sectionSweepPulse 1.2s ease-out;
+}
+
+@keyframes sectionSweepPulse {
+  0% {
+    box-shadow: inset 0 0 0 3px rgba(0, 102, 255, 0.5), 0 0 30px rgba(0, 102, 255, 0.2);
+  }
+  100% {
+    box-shadow: inset 0 0 0 0px transparent, 0 0 0px transparent;
+  }
+}
+
+/* ==========================================================================
+   FONDOS INMÓVILES (PARALLAX & FIXED BACKGROUNDS CON DEGRADADOS CLAROS/AZULES)
+   ========================================================================== */
+.fixed-bg-section {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+  .fixed-bg-section {
+    background-attachment: scroll;
+  }
+}
+
+/* Carrusel Hero: Filtro con degradado azul al 30% de opacidad */
+.bg-slide-1 {
+  background-image: linear-gradient(to right, rgba(11, 37, 69, 0.40) 0%, rgba(11, 37, 69, 0.30) 50%, rgba(0, 102, 255, 0.18) 100%), var(--bg-hero-1);
+}
+.bg-slide-2 {
+  background-image: linear-gradient(to right, rgba(11, 37, 69, 0.40) 0%, rgba(11, 37, 69, 0.30) 50%, rgba(0, 102, 255, 0.18) 100%), var(--bg-hero-2);
+}
+.bg-slide-3 {
+  background-image: linear-gradient(to right, rgba(11, 37, 69, 0.40) 0%, rgba(11, 37, 69, 0.30) 50%, rgba(0, 102, 255, 0.18) 100%), var(--bg-hero-3);
+}
+.bg-slide-4 {
+  background-image: linear-gradient(to right, rgba(11, 37, 69, 0.40) 0%, rgba(11, 37, 69, 0.30) 50%, rgba(0, 102, 255, 0.18) 100%), var(--bg-hero-4);
+}
+.bg-slide-5 {
+  background-image: linear-gradient(to right, rgba(11, 37, 69, 0.40) 0%, rgba(11, 37, 69, 0.30) 50%, rgba(0, 102, 255, 0.18) 100%), var(--bg-hero-5);
+}
+
+.hero-text-shadow {
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.95), 0 4px 28px rgba(0, 0, 0, 0.9), 0 1px 3px rgba(0, 0, 0, 1);
+}
+
+.bg-section-services {
+  background-image: var(--bg-services);
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-section-premium {
+  background-image: var(--bg-premium-celosias);
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-section-smart-locks,
+.bg-section-climas {
+  background-image: linear-gradient(135deg, rgba(11, 37, 69, 0.72) 0%, rgba(11, 37, 69, 0.68) 50%, rgba(11, 37, 69, 0.72) 100%), var(--bg-smart-locks);
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-section-gate-motors {
+  background-image: linear-gradient(135deg, rgba(11, 37, 69, 0.72) 0%, rgba(11, 37, 69, 0.68) 50%, rgba(11, 37, 69, 0.72) 100%), var(--bg-gate-motors);
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-section-fraccionamientos {
+  background-image: linear-gradient(135deg, rgba(11, 37, 69, 0.72) 0%, rgba(11, 37, 69, 0.68) 50%, rgba(2, 132, 199, 0.68) 100%), var(--bg-fraccionamientos);
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-section-red-aliados {
+  background-image: linear-gradient(135deg, rgba(11, 37, 69, 0.72) 0%, rgba(15, 23, 42, 0.68) 50%, rgba(11, 37, 69, 0.72) 100%), var(--bg-red-aliados);
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-section-led-lighting {
+  background-image: var(--bg-led-lighting);
+}
+
+.bg-section-proceso {
+  background-image: var(--bg-proceso);
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-section-quote-cta {
+  background-image: var(--bg-quote-cta);
+}
+
+.bg-section-testimonios {
+  background-image: var(--bg-testimonios);
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-section-contacto {
+  background-image: var(--bg-contacto);
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-section-footer {
+  background-color: #0B192C;
+}
+
+/* ==========================================================================
+   TARJETAS Y PANELES MODERNOS (LIGHT TECH GLASS / SHADOWS)
+   ========================================================================== */
+.light-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 4px 20px -2px rgba(15, 39, 68, 0.06), 0 2px 6px -1px rgba(15, 39, 68, 0.04);
+}
+
+.light-card-hover {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.light-card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 35px -8px rgba(0, 102, 255, 0.16), 0 6px 15px -2px rgba(0, 102, 255, 0.08);
+  border-color: #93C5FD;
+}
+
+.glass-nav-light {
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 2px 15px rgba(15, 39, 68, 0.07);
+  border-bottom: 1px solid #E2E8F0;
+  padding: 0 !important;
+}
+
+/* Logo Oficial Limpio y Ampliado al Máximo en Header (Sin bloque de fondo) */
+.header-logo-container {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0.25rem 0.5rem !important;
+  margin: 0 !important;
+  flex-shrink: 0 !important;
+  transition: transform 0.3s ease !important;
+}
+.header-logo-container:hover {
+  transform: scale(1.04) !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.header-logo-img {
+  height: 52px !important;
+  max-height: 90% !important;
+  width: auto !important;
+  max-width: 180px !important;
+  object-fit: contain !important;
+  display: block !important;
+  filter: drop-shadow(0 1px 3px rgba(11, 37, 69, 0.12));
+  transition: transform 0.3s ease;
+}
+@media (min-width: 640px) {
+  .header-logo-img {
+    height: 64px !important;
+    max-width: 230px !important;
+  }
+}
+@media (min-width: 1024px) {
+  .header-logo-img {
+    height: 72px !important;
+    max-width: 260px !important;
+  }
+}
+
+/* Resplandores */
+.glow-blue {
+  box-shadow: 0 0 25px rgba(0, 102, 255, 0.3);
+}
+.glow-orange {
+  box-shadow: 0 0 25px rgba(255, 102, 0, 0.35);
+}
+
+.text-gradient-blue {
+  background: linear-gradient(135deg, #0B2545 0%, #0066FF 60%, #0284C7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-orange {
+  background: linear-gradient(135deg, #FF6600 0%, #FF8533 50%, #FFA834 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-yellow {
+  background: linear-gradient(135deg, #FF6600 0%, #FF9900 50%, #FFB700 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Botones de Alta Conversión */
+.btn-primary-orange {
+  background: linear-gradient(135deg, #FF6600 0%, #FF7A1A 100%);
+  color: #FFFFFF !important;
+  box-shadow: 0 6px 18px rgba(255, 102, 0, 0.28);
+  transition: all 0.3s ease;
+}
+.btn-primary-orange:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(255, 102, 0, 0.4);
+  background: linear-gradient(135deg, #FF7A1A 0%, #FFA366 100%);
+}
+
+.btn-primary-blue {
+  background: linear-gradient(135deg, #0066FF 0%, #1D4ED8 100%);
+  color: #FFFFFF !important;
+  box-shadow: 0 6px 18px rgba(0, 102, 255, 0.28);
+  transition: all 0.3s ease;
+}
+.btn-primary-blue:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 102, 255, 0.4);
+  background: linear-gradient(135deg, #1A75FF 0%, #3B82F6 100%);
+}
+
+.btn-secondary-sky {
+  background: #E0F2FE;
+  color: #0284C7;
+  border: 1px solid #BAE6FD;
+  transition: all 0.3s ease;
+}
+.btn-secondary-sky:hover {
+  background: #BAE6FD;
+  color: #0369A1;
+  transform: translateY(-2px);
+}
+
+/* Badges */
+.tech-badge-light {
+  background: #EFF6FF;
+  border: 1px solid #BFDBFE;
+  color: #1D4ED8;
+}
+
+.tech-badge-dark {
+  background: rgba(0, 102, 255, 0.15);
+  border: 1px solid rgba(0, 102, 255, 0.4);
+  color: #93C5FD;
+}
+
+/* Botón Flotante de WhatsApp */
+.floating-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+@media (min-width: 640px) {
+  .floating-whatsapp {
+    bottom: 24px;
+    right: 24px;
+  }
+}
+.floating-whatsapp:hover {
+  transform: scale(1.08) translateY(-3px);
+}
+.whatsapp-pulse {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #25D366;
+  opacity: 0.6;
+  animation: pulse-ring 2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  50% { transform: scale(1.35); opacity: 0; }
+  100% { transform: scale(1.35); opacity: 0; }
+}
+
+/* Botón Flotante de Mantenimiento / Reparación Rápida (Esquina Inferior Izquierda) */
+.floating-repair-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 99;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+@media (min-width: 640px) {
+  .floating-repair-btn {
+    bottom: 24px;
+    left: 24px;
+  }
+}
+.floating-repair-btn:hover {
+  transform: scale(1.05) translateY(-3px);
+}
+.repair-pulse {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 9999px;
+  background: #FF6600;
+  opacity: 0.4;
+  animation: pulse-ring 2.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+  pointer-events: none;
+}
+
+/* ==========================================================================
+   ANIMACIONES DE SCROLL Y REVELACIÓN
+   ========================================================================== */
+.reveal-init {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.94);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.revealed {
+  opacity: 1 !important;
+  transform: translate(0, 0) scale(1) !important;
+}
+
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+.delay-400 { transition-delay: 400ms; }
+.delay-500 { transition-delay: 500ms; }
+
+/* Swiper Personalización */
+.swiper-button-next, .swiper-button-prev {
+  color: #FFFFFF !important;
+  width: 44px !important;
+  height: 44px !important;
+  background: rgba(11, 37, 69, 0.75);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.swiper-button-next:hover, .swiper-button-prev:hover {
+  background: var(--color-primary-blue);
+  border-color: var(--color-primary-blue);
+  box-shadow: 0 0 20px rgba(0, 102, 255, 0.5);
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-size: 16px !important;
+  font-weight: bold;
+}
+.swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+  background: rgba(255, 255, 255, 0.5) !important;
+  opacity: 1 !important;
+  transition: all 0.3s ease !important;
+}
+.swiper-pagination-bullet-active {
+  width: 28px !important;
+  border-radius: 5px !important;
+  background: var(--color-accent-orange) !important;
+  box-shadow: 0 0 15px rgba(255, 102, 0, 0.6);
+}
+
+@media (max-height: 520px) {
+  .hero-swiper .swiper-slide {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+  #mobile-menu {
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+}

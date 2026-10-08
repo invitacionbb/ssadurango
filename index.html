@@ -1,0 +1,1692 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SSA Durango | Servicios, Soluciones y Automatización | Portones Eléctricos, Línea Premium & Celosías, Cerraduras Inteligentes e Iluminación LED</title>
+  <meta name="description" content="Especialistas en Durango en fabricación y automatización de portones eléctricos con respaldo de batería, portones PREMIUM con celosías de corte láser CNC, cerraduras inteligentes con huella/app, iluminación LED y herrería moderna. ¡Cotiza hoy!">
+
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              cement: '#EEF2F6',
+              cementDark: '#E2E8F0',
+              blue: '#0066FF',
+              royalBlue: '#1D4ED8',
+              skyBlue: '#0284C7',
+              skyLight: '#E0F2FE',
+              skySubtle: '#F0F7FF',
+              darkBlue: '#0B2545',
+              footerNavy: '#0B192C',
+              darkGray: '#334155',
+              slateText: '#475569',
+              muted: '#64748B',
+              orange: '#FF6600',
+              orangeHover: '#E65C00',
+              yellow: '#F59E0B',
+              yellowLight: '#FEF3C7',
+            }
+          },
+          fontFamily: {
+            heading: ['Outfit', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Swiper.js CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Favicon Oficial SSA Durango -->
+  <link rel="icon" type="image/png" href="assets/images/logo-ssa.png">
+  <link rel="apple-touch-icon" href="assets/images/logo-ssa.png">
+
+  <!-- Estilos Personalizados -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-[#EEF2F6] text-[#475569] font-sans antialiased selection:bg-brand-blue selection:text-white">
+
+  <!-- Efecto Visual de Barrido Láser Luminoso -->
+  <div id="sweep-laser"></div>
+
+  <!-- =========================================================================
+       1. TOP BAR / CINTILLO SUPERIOR (DIVIDIDO EN DOS EXTREMOS)
+       ========================================================================= -->
+  <div class="bg-[#0B2545] text-slate-200 py-2 px-3 sm:px-6 text-xs sm:text-[12.5px] border-b border-blue-900/40">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-1.5 sm:gap-4 text-center sm:text-left font-medium tracking-wide">
+      <div class="flex items-center justify-center sm:justify-start gap-1.5 sm:gap-2 text-slate-300">
+        <i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-orange shrink-0"></i>
+        <span>Victoria de Durango, Dgo.</span>
+        <span class="text-slate-500">|</span>
+        <i data-lucide="phone-call" class="w-3.5 h-3.5 text-emerald-400 shrink-0 ml-0.5"></i>
+        <span>Atención Directa: <a href="https://wa.me/526183032358" target="_blank" class="font-bold text-white hover:text-brand-orange transition-colors">618 303 2358</a></span>
+      </div>
+      <div>
+        <a href="#red-aliados" class="text-amber-300 hover:text-amber-200 font-bold inline-flex items-center gap-1.5 text-[11.5px] sm:text-xs transition-colors group">
+          <span>🤝 ¿Eres Herrero, Técnico e Instalador? Registro para Precios Preferenciales</span>
+          <span class="group-hover:translate-x-1 transition-transform">→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Principal con Glassmorphism Claro y Menú Equilibrado -->
+  <header id="main-nav" class="sticky top-0 z-50 glass-nav-light transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-3 sm:px-4 lg:px-6 flex items-center justify-between h-20 sm:h-24">
+      
+      <!-- Logo Oficial Ampliado al Máximo (Limpio sobre Fondo Blanco/Glass) -->
+      <a href="#inicio" class="header-logo-container group" title="SSA Durango - Inicio">
+        <img src="assets/images/logo-ssa.png" alt="SSA Durango - Servicios, Soluciones y Automatización" class="header-logo-img transition-transform group-hover:scale-105 duration-300">
+      </a>
+
+      <!-- Desktop Navigation Links (Orden Solicitado por el Cliente) -->
+      <nav class="hidden lg:flex items-center justify-center space-x-1 xl:space-x-1.5 font-semibold text-xs xl:text-[13px] text-[#0B2545] px-1">
+        <a href="#servicios" class="px-2 py-1.5 rounded-lg hover:text-brand-blue hover:bg-slate-100 transition-all whitespace-nowrap">Servicios</a>
+        <a href="#portones" class="px-2 py-1.5 rounded-lg hover:text-brand-orange hover:bg-slate-100 transition-all whitespace-nowrap">Portones & Motores</a>
+        <a href="#premium-celosias" class="px-2.5 py-1.5 rounded-lg text-[#B45309] bg-amber-50 hover:bg-amber-100 hover:text-amber-800 transition-all flex items-center gap-1 font-bold border border-amber-300 whitespace-nowrap shadow-sm">
+          <i data-lucide="sparkles" class="w-3.5 h-3.5 text-brand-yellow shrink-0"></i>
+          <span>Línea Premium & CNC</span>
+        </a>
+        <a href="#fraccionamientos" class="px-2 py-1.5 rounded-lg hover:text-brand-blue hover:bg-slate-100 transition-all whitespace-nowrap">Fraccionamientos</a>
+        <a href="#cerraduras" class="px-2 py-1.5 rounded-lg hover:text-brand-blue hover:bg-slate-100 transition-all whitespace-nowrap">Cerraduras Smart</a>
+        <a href="#climas" class="px-2 py-1.5 rounded-lg hover:text-sky-600 hover:bg-slate-100 transition-all whitespace-nowrap flex items-center gap-1">
+          <i data-lucide="snowflake" class="w-3.5 h-3.5 text-sky-500"></i>
+          <span>Climas</span>
+        </a>
+        <a href="#cotizador" class="px-2 py-1.5 rounded-lg hover:text-brand-orange hover:bg-slate-100 transition-all whitespace-nowrap">Cotizador</a>
+      </nav>
+
+      <!-- CTA Header Button: Dentro del Contenedor sin Desbordar -->
+      <div class="hidden sm:flex items-center space-x-2 shrink-0 pr-3 sm:pr-4 pl-1">
+        <a href="#cotizador" class="btn-primary-orange px-3 xl:px-4 py-1.5 xl:py-2 rounded-xl font-bold text-xs xl:text-[13px] flex items-center gap-1.5 whitespace-nowrap shadow-md">
+          <i data-lucide="calculator" class="w-3.5 h-3.5"></i>
+          <span>Cotizar Ahora</span>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="lg:hidden flex items-center gap-2 pr-2 sm:pr-4">
+        <a href="#cotizador" class="sm:hidden p-2 rounded-xl bg-orange-50 text-brand-orange border border-orange-200" title="Cotizador SSA">
+          <i data-lucide="calculator" class="w-4 h-4"></i>
+        </a>
+        <button id="mobile-menu-btn" type="button" class="p-2.5 rounded-xl text-[#0B2545] hover:bg-slate-100 active:bg-slate-200 focus:outline-none border border-slate-200 cursor-pointer touch-manipulation" aria-label="Abrir Menú de Navegación" aria-expanded="false">
+          <i id="mobile-menu-icon" data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Nav Drawer (Dentro del Header Sticky Z-50) -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 sm:px-6 py-4 space-y-1.5 max-h-[82vh] overflow-y-auto shadow-2xl">
+      <a href="#inicio" class="mobile-nav-link flex items-center gap-3 text-[#0B2545] font-semibold p-2.5 rounded-xl hover:bg-slate-100 hover:text-brand-blue transition-colors">
+        <i data-lucide="home" class="w-4 h-4 text-brand-blue"></i>
+        <span>Inicio</span>
+      </a>
+      <a href="#servicios" class="mobile-nav-link flex items-center gap-3 text-[#0B2545] font-semibold p-2.5 rounded-xl hover:bg-slate-100 hover:text-brand-blue transition-colors">
+        <i data-lucide="layout-grid" class="w-4 h-4 text-brand-blue"></i>
+        <span>Servicios Principales</span>
+      </a>
+      <a href="#portones" class="mobile-nav-link flex items-center gap-3 text-[#0B2545] font-semibold p-2.5 rounded-xl hover:bg-slate-100 hover:text-brand-orange transition-colors">
+        <i data-lucide="warehouse" class="w-4 h-4 text-brand-orange"></i>
+        <span>Portones & Motores con Batería</span>
+      </a>
+      <a href="#premium-celosias" class="mobile-nav-link flex items-center gap-3 text-[#B45309] font-bold p-2.5 rounded-xl bg-amber-50 border border-amber-200 hover:bg-amber-100 transition-colors">
+        <i data-lucide="sparkles" class="w-4 h-4 text-brand-yellow"></i>
+        <span>✨ Línea Premium & Celosías CNC</span>
+      </a>
+      <a href="#fraccionamientos" class="mobile-nav-link flex items-center gap-3 text-[#0B2545] font-semibold p-2.5 rounded-xl hover:bg-slate-100 hover:text-brand-blue transition-colors">
+        <i data-lucide="shield-check" class="w-4 h-4 text-brand-blue"></i>
+        <span>Control para Fraccionamientos (Acceso Vial)</span>
+      </a>
+      <a href="#cerraduras" class="mobile-nav-link flex items-center gap-3 text-[#0B2545] font-semibold p-2.5 rounded-xl hover:bg-slate-100 hover:text-brand-blue transition-colors">
+        <i data-lucide="key-round" class="w-4 h-4 text-brand-blue"></i>
+        <span>Cerraduras Inteligentes & Domótica</span>
+      </a>
+      <a href="#climas" class="mobile-nav-link flex items-center gap-3 text-[#0B2545] font-semibold p-2.5 rounded-xl hover:bg-slate-100 hover:text-sky-600 transition-colors">
+        <i data-lucide="snowflake" class="w-4 h-4 text-sky-500"></i>
+        <span>Instalación y Servicio de Climas (Minisplits)</span>
+      </a>
+      <a href="#red-aliados" class="mobile-nav-link flex items-center gap-3 text-amber-800 font-bold p-2.5 rounded-xl bg-amber-50 border border-amber-200 hover:bg-amber-100 transition-colors">
+        <i data-lucide="users" class="w-4 h-4 text-amber-600"></i>
+        <span>Red de Instaladores & Herreros (B2B)</span>
+      </a>
+      <a href="#cotizador" class="mobile-nav-link flex items-center gap-3 text-[#0B2545] font-semibold p-2.5 rounded-xl hover:bg-slate-100 hover:text-brand-orange transition-colors">
+        <i data-lucide="calculator" class="w-4 h-4 text-brand-orange"></i>
+        <span>Cotizador Rápido</span>
+      </a>
+      <a href="#contacto" class="mobile-nav-link flex items-center gap-3 text-[#0B2545] font-semibold p-2.5 rounded-xl hover:bg-slate-100 transition-colors">
+        <i data-lucide="map-pin" class="w-4 h-4 text-[#0B2545]"></i>
+        <span>Contacto & Ubicación</span>
+      </a>
+      
+      <div class="pt-2 border-t border-slate-200">
+        <a href="#cotizador" class="mobile-nav-link w-full btn-primary-orange py-3 rounded-xl font-bold text-center flex justify-center items-center gap-2 text-sm shadow-lg">
+          <i data-lucide="calculator" class="w-4 h-4"></i>
+          <span>Cotizador en Línea</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       2. HERO SECTION: CARRUSEL CONTINUO SIN ESPACIOS AZULES RESIDUALES
+       ========================================================================= -->
+  <section id="inicio" class="relative w-full overflow-hidden bg-[#0B2545] flex flex-col p-0 m-0">
+    
+    <div class="swiper hero-swiper w-full flex-grow flex items-center min-h-[460px] sm:min-h-[500px] md:min-h-[540px] lg:min-h-[580px]">
+      <div class="swiper-wrapper">
+
+        <!-- SLIDE 1: Portones Eléctricos & Baterías de Respaldo -->
+        <div class="swiper-slide bg-slide-1 fixed-bg-section flex items-center py-8 sm:py-10 md:py-12 min-h-[460px] sm:min-h-[500px] md:min-h-[540px] lg:min-h-[580px]">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="max-w-3xl space-y-3 sm:space-y-4 md:space-y-5">
+              <div class="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1 sm:py-1.5 rounded-full tech-badge-dark text-xs sm:text-sm font-semibold slide-animate reveal-init backdrop-blur-md">
+                <i data-lucide="shield-check" class="w-3.5 sm:w-4 h-3.5 sm:h-4 text-blue-400 shrink-0"></i>
+                <span>Tecnología • Seguridad • Confianza</span>
+              </div>
+              <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] xl:text-5xl font-extrabold tracking-tight text-white leading-tight font-heading slide-animate reveal-init delay-100 hero-text-shadow">
+                Tu Acceso Automatizado: <span class="text-[#FF6600] font-black">Comodidad, Estilo y Seguridad Total</span>
+              </h1>
+              <p class="text-xs sm:text-base md:text-lg text-slate-100 leading-relaxed slide-animate reveal-init delay-200 hero-text-shadow">
+                Fabricación, automatización y mantenimiento de portones residenciales, comerciales e industriales en Durango. Motores de alto rendimiento y <strong class="text-yellow-300">baterías de respaldo</strong> para que nunca te quedes fuera ante un corte de luz.
+              </p>
+              <div class="flex flex-wrap gap-3 sm:gap-4 pt-1 sm:pt-2 slide-animate reveal-init delay-300">
+                <button onclick="quoteService('Fabricación e Instalación de Portones')" class="btn-primary-orange px-5 sm:px-7 py-2.5 sm:py-3.5 rounded-xl font-bold text-xs sm:text-sm md:text-base flex items-center gap-2">
+                  <i data-lucide="calculator" class="w-4 h-4"></i>
+                  <span>Cotizar mi Portón</span>
+                </button>
+                <a href="#portones" class="bg-white/15 hover:bg-white/25 text-white backdrop-blur-md border border-white/20 px-4 sm:px-6 py-2.5 sm:py-3.5 rounded-xl font-semibold text-xs sm:text-sm md:text-base transition-all flex items-center gap-2">
+                  <span>Ver Modelos y Motores</span>
+                  <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 2: Herrería & Celosías CNC -->
+        <div class="swiper-slide bg-slide-2 fixed-bg-section flex items-center py-8 sm:py-10 md:py-12 min-h-[460px] sm:min-h-[500px] md:min-h-[540px] lg:min-h-[580px]">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="max-w-3xl space-y-3 sm:space-y-4 md:space-y-5">
+              <div class="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1 sm:py-1.5 rounded-full tech-badge-dark text-xs sm:text-sm font-semibold slide-animate reveal-init backdrop-blur-md">
+                <i data-lucide="gem" class="w-3.5 sm:w-4 h-3.5 sm:h-4 text-yellow-400 shrink-0"></i>
+                <span>✨ Línea Premium & Herrería CNC</span>
+              </div>
+              <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] xl:text-5xl font-extrabold tracking-tight text-white leading-tight font-heading slide-animate reveal-init delay-100 hero-text-shadow">
+                Herrería Residencial y Comercial <span class="text-[#FF7A1A] font-black">a la Medida de tu Proyecto</span>
+              </h2>
+              <p class="text-xs sm:text-base md:text-lg text-slate-100 leading-relaxed slide-animate reveal-init delay-200 hero-text-shadow">
+                Portones con celosías de corte láser CNC, puertas residenciales de seguridad, cancelería y acabados de alta gama. Diseños únicos que realzan el valor y la estética de tu propiedad.
+              </p>
+              <div class="flex flex-wrap gap-3 sm:gap-4 pt-1 sm:pt-2 slide-animate reveal-init delay-300">
+                <button onclick="quoteService('Herrería Residencial & Corte CNC')" class="btn-primary-orange px-5 sm:px-7 py-2.5 sm:py-3.5 rounded-xl font-bold text-xs sm:text-sm md:text-base flex items-center gap-2">
+                  <i data-lucide="calculator" class="w-4 h-4"></i>
+                  <span>Cotizar Línea CNC</span>
+                </button>
+                <a href="#premium-celosias" class="bg-white/15 hover:bg-white/25 text-white backdrop-blur-md border border-white/20 px-4 sm:px-6 py-2.5 sm:py-3.5 rounded-xl font-semibold text-xs sm:text-sm md:text-base transition-all flex items-center gap-2">
+                  <span>Ver Diseños y Celosías</span>
+                  <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 3: Fraccionamientos & Privadas -->
+        <div class="swiper-slide bg-slide-3 fixed-bg-section flex items-center py-8 sm:py-10 md:py-12 min-h-[460px] sm:min-h-[500px] md:min-h-[540px] lg:min-h-[580px]">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="max-w-3xl space-y-3 sm:space-y-4 md:space-y-5">
+              <div class="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1 sm:py-1.5 rounded-full tech-badge-dark text-xs sm:text-sm font-semibold text-sky-300 slide-animate reveal-init backdrop-blur-md">
+                <i data-lucide="building-2" class="w-3.5 sm:w-4 h-3.5 sm:h-4 text-sky-400 shrink-0"></i>
+                <span>🏢 Soluciones para Fraccionamientos y Empresas</span>
+              </div>
+              <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] xl:text-5xl font-extrabold tracking-tight text-white leading-tight font-heading slide-animate reveal-init delay-100 hero-text-shadow">
+                Control de Acceso e Infraestructura <span class="text-sky-300 font-black">para Fraccionamientos y Privadas</span>
+              </h2>
+              <p class="text-xs sm:text-base md:text-lg text-slate-100 leading-relaxed slide-animate reveal-init delay-200 hero-text-shadow">
+                Barreras vehiculares de alto flujo, lectores de proximidad RFID / Tag, sistemas autónomos con respaldo de batería y pólizas de mantenimiento preventivo para comités y administradores.
+              </p>
+              <div class="flex flex-wrap gap-3 sm:gap-4 pt-1 sm:pt-2 slide-animate reveal-init delay-300">
+                <button onclick="quoteService('Acceso para Fraccionamientos y Privadas')" class="btn-primary-blue px-5 sm:px-7 py-2.5 sm:py-3.5 rounded-xl font-bold text-xs sm:text-sm md:text-base flex items-center gap-2">
+                  <i data-lucide="calculator" class="w-4 h-4"></i>
+                  <span>Cotizar Solución para Privada</span>
+                </button>
+                <a href="#fraccionamientos" class="bg-white/15 hover:bg-white/25 text-white backdrop-blur-md border border-white/20 px-4 sm:px-6 py-2.5 sm:py-3.5 rounded-xl font-semibold text-xs sm:text-sm md:text-base transition-all flex items-center gap-2">
+                  <span>Conocer Soluciones</span>
+                  <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 4: Cerraduras Inteligentes & Domótica -->
+        <div class="swiper-slide bg-slide-4 fixed-bg-section flex items-center py-8 sm:py-10 md:py-12 min-h-[460px] sm:min-h-[500px] md:min-h-[540px] lg:min-h-[580px]">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="max-w-3xl space-y-3 sm:space-y-4 md:space-y-5">
+              <div class="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1 sm:py-1.5 rounded-full tech-badge-dark text-xs sm:text-sm font-semibold text-sky-300 slide-animate reveal-init backdrop-blur-md">
+                <i data-lucide="smartphone" class="w-3.5 sm:w-4 h-3.5 sm:h-4 text-sky-400 shrink-0"></i>
+                <span>Hogar Inteligente & Control Total</span>
+              </div>
+              <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] xl:text-5xl font-extrabold tracking-tight text-white leading-tight font-heading slide-animate reveal-init delay-100 hero-text-shadow">
+                Controla el Acceso a tu Propiedad <span class="text-sky-300 font-black">Desde tu Celular</span>
+              </h2>
+              <p class="text-xs sm:text-base md:text-lg text-slate-100 leading-relaxed slide-animate reveal-init delay-200 hero-text-shadow">
+                Cerraduras digitales de última generación: apertura por huella dactilar, código numérico, app móvil y tarjetas de proximidad. Mayor tranquilidad para ti, tu familia y tu negocio.
+              </p>
+              <div class="flex flex-wrap gap-3 sm:gap-4 pt-1 sm:pt-2 slide-animate reveal-init delay-300">
+                <button onclick="quoteService('Cerraduras Digitales & Control Smart')" class="btn-primary-blue px-5 sm:px-7 py-2.5 sm:py-3.5 rounded-xl font-bold text-xs sm:text-sm md:text-base flex items-center gap-2">
+                  <i data-lucide="calculator" class="w-4 h-4"></i>
+                  <span>Cotizar Cerradura Digital</span>
+                </button>
+                <a href="#cerraduras" class="bg-white/15 hover:bg-white/25 text-white backdrop-blur-md border border-white/20 px-4 sm:px-6 py-2.5 sm:py-3.5 rounded-xl font-semibold text-xs sm:text-sm md:text-base transition-all flex items-center gap-2">
+                  <span>Conocer Modelos</span>
+                  <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 5: Mantenimiento & Climas (Minisplits) -->
+        <div class="swiper-slide bg-slide-5 fixed-bg-section flex items-center py-8 sm:py-10 md:py-12 min-h-[460px] sm:min-h-[500px] md:min-h-[540px] lg:min-h-[580px]">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="max-w-3xl space-y-3 sm:space-y-4 md:space-y-5">
+              <div class="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1 sm:py-1.5 rounded-full tech-badge-dark text-xs sm:text-sm font-semibold text-emerald-300 slide-animate reveal-init backdrop-blur-md">
+                <i data-lucide="snowflake" class="w-3.5 sm:w-4 h-3.5 sm:h-4 text-emerald-400 shrink-0"></i>
+                <span>❄️ Confort & Servicios Técnicos</span>
+              </div>
+              <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] xl:text-5xl font-extrabold tracking-tight text-white leading-tight font-heading slide-animate reveal-init delay-100 hero-text-shadow">
+                Mantenimiento y Servicios Técnicos <span class="text-emerald-400 font-black">para Hogar y Empresa</span>
+              </h2>
+              <p class="text-xs sm:text-base md:text-lg text-slate-100 leading-relaxed slide-animate reveal-init delay-200 hero-text-shadow">
+                Mantenimiento preventivo y correctivo para portones de todas las marcas, venta de controles originales y servicio técnico profesional de instalación y mantenimiento de minisplits.
+              </p>
+              <div class="flex flex-wrap gap-3 sm:gap-4 pt-1 sm:pt-2 slide-animate reveal-init delay-300">
+                <button onclick="quoteService('Mantenimiento Preventivo y Correctivo')" class="btn-primary-orange px-5 sm:px-7 py-2.5 sm:py-3.5 rounded-xl font-bold text-xs sm:text-sm md:text-base flex items-center gap-2">
+                  <i data-lucide="wrench" class="w-4 h-4"></i>
+                  <span>Solicitar Mantenimiento</span>
+                </button>
+                <a href="#climas" class="bg-white/15 hover:bg-white/25 text-white backdrop-blur-md border border-white/20 px-4 sm:px-6 py-2.5 sm:py-3.5 rounded-xl font-semibold text-xs sm:text-sm md:text-base transition-all flex items-center gap-2">
+                  <span>Servicios de Climas</span>
+                  <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Barra de Controles del Hero Unida Continuamente -->
+    <div class="relative z-30 bg-[#0B2545] border-t border-white/10 py-3 px-3 sm:px-6">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3">
+        
+        <!-- Botones Selectores Rápidos (5 Pestañas) -->
+        <div class="flex flex-wrap items-center justify-center gap-1.5 sm:gap-2">
+          <button type="button" data-slide-index="0" class="hero-tab-btn px-2.5 sm:px-3.5 py-1.5 rounded-lg text-[11px] sm:text-xs font-semibold border transition-all duration-300 flex items-center gap-1.5 bg-brand-orange text-white border-brand-orange shadow-md">
+            <i data-lucide="warehouse" class="w-3.5 h-3.5 shrink-0"></i>
+            <span>1. Portones</span>
+          </button>
+          
+          <button type="button" data-slide-index="1" class="hero-tab-btn px-2.5 sm:px-3.5 py-1.5 rounded-lg text-[11px] sm:text-xs font-semibold border border-white/15 bg-white/10 text-slate-200 hover:bg-white/20 transition-all duration-300 flex items-center gap-1.5">
+            <i data-lucide="gem" class="w-3.5 h-3.5 text-yellow-300 shrink-0"></i>
+            <span>2. Herrería & CNC</span>
+          </button>
+
+          <button type="button" data-slide-index="2" class="hero-tab-btn px-2.5 sm:px-3.5 py-1.5 rounded-lg text-[11px] sm:text-xs font-semibold border border-white/15 bg-white/10 text-slate-200 hover:bg-white/20 transition-all duration-300 flex items-center gap-1.5">
+            <i data-lucide="building-2" class="w-3.5 h-3.5 text-sky-300 shrink-0"></i>
+            <span>3. Fraccionamientos</span>
+          </button>
+          
+          <button type="button" data-slide-index="3" class="hero-tab-btn px-2.5 sm:px-3.5 py-1.5 rounded-lg text-[11px] sm:text-xs font-semibold border border-white/15 bg-white/10 text-slate-200 hover:bg-white/20 transition-all duration-300 flex items-center gap-1.5">
+            <i data-lucide="key-round" class="w-3.5 h-3.5 shrink-0"></i>
+            <span>4. Cerraduras Smart</span>
+          </button>
+          
+          <button type="button" data-slide-index="4" class="hero-tab-btn px-2.5 sm:px-3.5 py-1.5 rounded-lg text-[11px] sm:text-xs font-semibold border border-white/15 bg-white/10 text-slate-200 hover:bg-white/20 transition-all duration-300 flex items-center gap-1.5">
+            <i data-lucide="snowflake" class="w-3.5 h-3.5 text-emerald-300 shrink-0"></i>
+            <span>5. Climas & Mantenimiento</span>
+          </button>
+        </div>
+
+        <!-- Controles de Navegación y Pausa -->
+        <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+          <button type="button" class="hero-prev-btn p-1.5 sm:p-2 rounded-lg bg-white/10 hover:bg-white/20 text-slate-100 border border-white/15 transition-colors" title="Slide Anterior" aria-label="Anterior">
+            <i data-lucide="chevron-left" class="w-4 h-4"></i>
+          </button>
+
+          <button type="button" id="hero-pause-btn" class="px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-slate-100 border border-white/15 text-xs font-semibold flex items-center gap-1.5 transition-colors" title="Pausar o Reanudar Carrusel">
+            <i id="hero-pause-icon" data-lucide="pause" class="w-3.5 h-3.5"></i>
+            <span id="hero-pause-text">Pausar</span>
+          </button>
+
+          <button type="button" class="hero-next-btn p-1.5 sm:p-2 rounded-lg bg-white/10 hover:bg-white/20 text-slate-100 border border-white/15 transition-colors" title="Slide Siguiente" aria-label="Siguiente">
+            <i data-lucide="chevron-right" class="w-4 h-4"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- =========================================================================
+       3. CINTA DE CONFIANZA & PILARES DE VALOR
+       ========================================================================= -->
+  <section class="relative z-20 -mt-6 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="light-card rounded-2xl p-5 sm:p-8 grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 text-center border border-slate-200 shadow-lg">
+      
+      <!-- 1. Máxima Seguridad y Calidad -->
+      <div class="flex flex-col items-center space-y-1.5 sm:space-y-2 p-2 reveal-init delay-100">
+        <div class="w-10 sm:w-12 h-10 sm:h-12 rounded-xl bg-blue-50 border border-blue-200 flex items-center justify-center text-brand-blue mb-1">
+          <i data-lucide="shield-check" class="w-5 sm:w-6 h-5 sm:h-6"></i>
+        </div>
+        <h4 class="font-heading font-bold text-base sm:text-xl text-[#0B2545]">Máxima Seguridad</h4>
+        <p class="text-[11px] sm:text-xs md:text-sm text-slate-500">Sistemas confiables y materiales de alta durabilidad.</p>
+      </div>
+
+      <!-- 2. Continuidad y Respaldo -->
+      <div class="flex flex-col items-center space-y-1.5 sm:space-y-2 p-2 reveal-init delay-200">
+        <div class="w-10 sm:w-12 h-10 sm:h-12 rounded-xl bg-orange-50 border border-orange-200 flex items-center justify-center text-brand-orange mb-1">
+          <i data-lucide="battery-charging" class="w-5 sm:w-6 h-5 sm:h-6"></i>
+        </div>
+        <h4 class="font-heading font-bold text-base sm:text-xl text-[#0B2545]">Baterías de Respaldo</h4>
+        <p class="text-[11px] sm:text-xs md:text-sm text-slate-500">Operación garantizada ante cortes de luz eléctrica.</p>
+      </div>
+
+      <!-- 3. Instalación Especializada -->
+      <div class="flex flex-col items-center space-y-1.5 sm:space-y-2 p-2 reveal-init delay-300">
+        <div class="w-10 sm:w-12 h-10 sm:h-12 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-center text-brand-yellow mb-1">
+          <i data-lucide="wrench" class="w-5 sm:w-6 h-5 sm:h-6"></i>
+        </div>
+        <h4 class="font-heading font-bold text-base sm:text-xl text-[#0B2545]">Instalación Experta</h4>
+        <p class="text-[11px] sm:text-xs md:text-sm text-slate-500">Soporte técnico capacitado y trabajos garantizados.</p>
+      </div>
+
+      <!-- 4. Atención Local y Rápida -->
+      <div class="flex flex-col items-center space-y-1.5 sm:space-y-2 p-2 reveal-init delay-400">
+        <div class="w-10 sm:w-12 h-10 sm:h-12 rounded-xl bg-emerald-50 border border-emerald-200 flex items-center justify-center text-emerald-600 mb-1">
+          <i data-lucide="headset" class="w-5 sm:w-6 h-5 sm:h-6"></i>
+        </div>
+        <h4 class="font-heading font-bold text-base sm:text-xl text-[#0B2545]">Soporte Local Directo</h4>
+        <p class="text-[11px] sm:text-xs md:text-sm text-slate-500">Atención inmediata en Durango y mantenimientos.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. SECCIÓN DE SERVICIOS INTEGRALES (BENTO GRID)
+       ========================================================================= -->
+  <section id="servicios" class="fixed-bg-section bg-section-services py-16 sm:py-24 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-3 sm:space-y-4">
+      <span class="text-brand-orange uppercase text-xs sm:text-sm font-extrabold tracking-widest reveal-init">
+        Catálogo Completo de Soluciones
+      </span>
+      <h2 class="text-2xl sm:text-4xl md:text-5xl font-black text-[#0B2545] font-heading reveal-init delay-100">
+        Servicios Profesionales para <span class="text-gradient-blue">Hogar, Negocio e Industria</span>
+      </h2>
+      <p class="text-[#475569] text-sm sm:text-base md:text-lg reveal-init delay-200">
+        Soluciones integrales de automatización, seguridad inteligente, herrería arquitectónica y climatización en la ciudad de Durango.
+      </p>
+    </div>
+
+    <!-- Grid de 6 Tarjetas Claras -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+
+      <!-- Servicio 1: Mantenimiento Preventivo y Correctivo (Prioridad del Cliente) -->
+      <div class="light-card light-card-hover rounded-2xl p-6 sm:p-8 flex flex-col justify-between relative group border-t-4 border-t-emerald-500 reveal-scale delay-100">
+        <div class="space-y-4">
+          <div class="w-12 sm:w-14 h-12 sm:h-14 rounded-2xl bg-emerald-50 border border-emerald-200 flex items-center justify-center text-emerald-600 group-hover:scale-110 transition-transform">
+            <i data-lucide="wrench" class="w-6 sm:w-7 h-6 sm:h-7"></i>
+          </div>
+          <h3 class="text-xl sm:text-2xl font-bold text-[#0B2545] font-heading">Mantenimiento Preventivo y Correctivo</h3>
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+            Servicio técnico integral y urgente para portones de todas las marcas. Prolonga la vida útil de tus equipos, evita atascos repentinos y asegura su rendimiento óptimo.
+          </p>
+          <ul class="space-y-2 text-xs text-slate-500 pt-2 border-t border-slate-100">
+            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 shrink-0"></i> Calibración de fuerza y final de carrera</li>
+            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 shrink-0"></i> Lubricación especializada de rieles y engranes</li>
+            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 shrink-0"></i> Reparación de fallas electrónicas y mecánicas</li>
+          </ul>
+        </div>
+        <div class="pt-6 mt-6 border-t border-slate-100">
+          <button onclick="quoteService('Mantenimiento Preventivo y Correctivo')" class="w-full py-2.5 rounded-xl bg-slate-50 hover:bg-emerald-600 hover:text-white text-[#0B2545] font-bold text-xs sm:text-sm border border-slate-200 transition-colors flex items-center justify-center gap-2">
+            <span>Solicitar Mantenimiento</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Servicio 2: Fabricación e Instalación de Portones -->
+      <div class="light-card light-card-hover rounded-2xl p-6 sm:p-8 flex flex-col justify-between relative group border-t-4 border-t-brand-blue reveal-scale delay-200">
+        <div class="space-y-4">
+          <div class="w-12 sm:w-14 h-12 sm:h-14 rounded-2xl bg-blue-50 border border-blue-200 flex items-center justify-center text-brand-blue group-hover:scale-110 transition-transform">
+            <i data-lucide="warehouse" class="w-6 sm:w-7 h-6 sm:h-7"></i>
+          </div>
+          <h3 class="text-xl sm:text-2xl font-bold text-[#0B2545] font-heading">Fabricación e Instalación de Portones</h3>
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+            Portones corredizos sobre barda, seccionales, abatibles y ascendentes. Diseños a la medida fabricados en acero reforzado con acabados de primera calidad.
+          </p>
+          <ul class="space-y-2 text-xs text-slate-500 pt-2 border-t border-slate-100">
+            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-brand-blue shrink-0"></i> Motores de alta resistencia y durabilidad</li>
+            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-brand-blue shrink-0"></i> Baterías de respaldo ante apagones</li>
+            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-brand-blue shrink-0"></i> Sensores y fotoceldas de seguridad anti-impacto</li>
+          </ul>
+        </div>
+        <div class="pt-6 mt-6 border-t border-slate-100">
+          <button onclick="quoteService('Fabricación e Instalación de Portones')" class="w-full py-2.5 rounded-xl bg-slate-50 hover:bg-brand-blue hover:text-white text-[#0B2545] font-bold text-xs sm:text-sm border border-slate-200 transition-colors flex items-center justify-center gap-2">
+            <span>Cotizar Portón</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Servicio 3: Acceso para Fraccionamientos y Privadas (Nuevo) -->
+      <div class="light-card light-card-hover rounded-2xl p-6 sm:p-8 flex flex-col justify-between relative group border-t-4 border-t-sky-500 reveal-scale delay-300">
+        <div class="space-y-4">
+          <div class="w-12 sm:w-14 h-12 sm:h-14 rounded-2xl bg-sky-50 border border-sky-200 flex items-center justify-center text-sky-600 group-hover:scale-110 transition-transform">
+            <i data-lucide="building-2" class="w-6 sm:w-7 h-6 sm:h-7"></i>
+          </div>
+          <h3 class="text-xl sm:text-2xl font-bold text-[#0B2545] font-heading">Acceso para Fraccionamientos y Privadas</h3>
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+            Barreras vehiculares de alto flujo, lectores de Tag RFID para residentes, tarjetas de proximidad y contratos de mantenimiento preventivo para privadas en Durango.
+          </p>
+          <ul class="space-y-2 text-xs text-slate-500 pt-2 border-t border-slate-100">
+            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-sky-600 shrink-0"></i> Barreras automáticas de ciclo continuo</li>
+            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-sky-600 shrink-0"></i> Control vehicular con Tag RFID y proximidad</li>
+            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-sky-600 shrink-0"></i> Pólizas mensuales para administradores</li>
+          </ul>
+        </div>
+        <div class="pt-6 mt-6 border-t border-slate-100">
+          <button onclick="quoteService('Acceso para Fraccionamientos y Privadas')" class="w-full py-2.5 rounded-xl bg-slate-50 hover:bg-sky-600 hover:text-white text-[#0B2545] font-bold text-xs sm:text-sm border border-slate-200 transition-colors flex items-center justify-center gap-2">
+            <span>Cotizar para Privada</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Servicio 4: Herrería Residencial & Corte CNC -->
+      <div class="light-card light-card-hover rounded-2xl p-6 sm:p-8 flex flex-col justify-between relative group border-t-4 border-t-amber-500 reveal-scale delay-100">
+        <div class="space-y-4">
+          <div class="w-12 sm:w-14 h-12 sm:h-14 rounded-2xl bg-amber-50 border border-amber-200 flex items-center justify-center text-brand-yellow group-hover:scale-110 transition-transform">
+            <i data-lucide="gem" class="w-6 sm:w-7 h-6 sm:h-7"></i>
+          </div>
+          <h3 class="text-xl sm:text-2xl font-bold text-[#0B2545] font-heading">Herrería Residencial & Corte CNC</h3>
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+            Portones con celosías cortadas en láser CNC, puertas residenciales de alta seguridad, barandales y cancelería moderna con pintura electrostática horneada.
+          </p>
+          <ul class="space-y-2 text-xs text-slate-500 pt-2 border-t border-slate-100">
+            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-amber-500 shrink-0"></i> Celosías con diseños exclusivos en láser CNC</li>
+            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-amber-500 shrink-0"></i> Acero estructural de calibre pesado</li>
+            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-amber-500 shrink-0"></i> Pintura horneada y acabados tipo madera</li>
+          </ul>
+        </div>
+        <div class="pt-6 mt-6 border-t border-slate-100">
+          <button onclick="quoteService('Herrería Residencial & Corte CNC')" class="w-full py-2.5 rounded-xl bg-slate-50 hover:bg-amber-500 hover:text-slate-950 text-[#0B2545] font-bold text-xs sm:text-sm border border-slate-200 transition-colors flex items-center justify-center gap-2">
+            <span>Cotizar Herrería & CNC</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Servicio 5: Cerraduras Digitales & Control Smart -->
+      <div class="light-card light-card-hover rounded-2xl p-6 sm:p-8 flex flex-col justify-between relative group border-t-4 border-t-brand-orange reveal-scale delay-200">
+        <div class="space-y-4">
+          <div class="w-12 sm:w-14 h-12 sm:h-14 rounded-2xl bg-orange-50 border border-orange-200 flex items-center justify-center text-brand-orange group-hover:scale-110 transition-transform">
+            <i data-lucide="key-round" class="w-6 sm:w-7 h-6 sm:h-7"></i>
+          </div>
+          <h3 class="text-xl sm:text-2xl font-bold text-[#0B2545] font-heading">Cerraduras Digitales & Control Smart</h3>
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+            Chapas electrónicas para puertas de acceso. Apertura por huella dactilar, app celular, código numérico y tarjeta RFID. Monitoreo en tiempo real.
+          </p>
+          <ul class="space-y-2 text-xs text-slate-500 pt-2 border-t border-slate-100">
+            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-brand-orange shrink-0"></i> Apertura biométrica ultra-rápida (0.3s)</li>
+            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-brand-orange shrink-0"></i> Códigos dinámicos temporales para visitas</li>
+            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-brand-orange shrink-0"></i> Registro de entradas en tu smartphone</li>
+          </ul>
+        </div>
+        <div class="pt-6 mt-6 border-t border-slate-100">
+          <button onclick="quoteService('Cerraduras Digitales & Control Smart')" class="w-full py-2.5 rounded-xl bg-slate-50 hover:bg-brand-orange hover:text-white text-[#0B2545] font-bold text-xs sm:text-sm border border-slate-200 transition-colors flex items-center justify-center gap-2">
+            <span>Cotizar Cerradura Smart</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Servicio 6: Instalación y Mantenimiento de Minisplits (Reemplaza Iluminación) -->
+      <div class="light-card light-card-hover rounded-2xl p-6 sm:p-8 flex flex-col justify-between relative group border-t-4 border-t-cyan-500 reveal-scale delay-300">
+        <div class="space-y-4">
+          <div class="w-12 sm:w-14 h-12 sm:h-14 rounded-2xl bg-cyan-50 border border-cyan-200 flex items-center justify-center text-cyan-600 group-hover:scale-110 transition-transform">
+            <i data-lucide="snowflake" class="w-6 sm:w-7 h-6 sm:h-7"></i>
+          </div>
+          <h3 class="text-xl sm:text-2xl font-bold text-[#0B2545] font-heading">Instalación y Mantenimiento de Minisplits</h3>
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+            Servicio técnico profesional en climatización: instalación estética nivelada, mantenimiento preventivo con lavado a presión y recarga de refrigerante ecológico.
+          </p>
+          <ul class="space-y-2 text-xs text-slate-500 pt-2 border-t border-slate-100">
+            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-600 shrink-0"></i> Instalación certificada libre de fugas</li>
+            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-600 shrink-0"></i> Lavado profundo y desinfección de turbina</li>
+            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-600 shrink-0"></i> Diagnóstico eléctrico y recarga de gas</li>
+          </ul>
+        </div>
+        <div class="pt-6 mt-6 border-t border-slate-100">
+          <button onclick="quoteService('Instalación y Mantenimiento de Minisplits')" class="w-full py-2.5 rounded-xl bg-slate-50 hover:bg-cyan-600 hover:text-white text-[#0B2545] font-bold text-xs sm:text-sm border border-slate-200 transition-colors flex items-center justify-center gap-2">
+            <span>Cotizar Minisplit</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </section>
+
+  <!-- =========================================================================
+       5. SHOWCASE 1: PORTONES Y BATERÍAS DE RESPALDO (TÍTULO NARANJA VIBRANTE)
+       ========================================================================= -->
+  <section id="portones" class="fixed-bg-section bg-section-gate-motors py-20 sm:py-28 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        
+        <div class="lg:col-span-7 space-y-4 sm:space-y-6 reveal-left">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-white text-xs sm:text-sm font-extrabold border border-orange-300/70 shadow-lg" style="background-color: rgba(234, 88, 12, 0.65); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);">
+            <i data-lucide="battery-charging" class="w-4 h-4 text-amber-200"></i>
+            <span>Innovación en Automatización</span>
+          </div>
+          <h2 class="text-2xl sm:text-4xl md:text-5xl font-extrabold text-white font-heading leading-tight hero-text-shadow">
+            Portones Automatizados con <span class="text-[#FF6600] font-black">Baterías de Respaldo</span>
+          </h2>
+          <p class="text-slate-100 text-sm sm:text-base md:text-lg leading-relaxed hero-text-shadow">
+            ¿Se fue la luz en tu colonia? Con los sistemas automatizados de SSA Durango nunca te quedarás fuera ni atrapado dentro. Motores residenciales e industriales equipados con módulos de respaldo de batería que garantizan ciclos de apertura y cierre continuos aun durante cortes de energía eléctrica.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 sm:gap-4 pt-2 sm:pt-4">
+            <div class="bg-[#0B2545]/85 backdrop-blur-md p-4 rounded-xl flex items-start gap-3 border border-white/20">
+              <div class="p-2 rounded-lg bg-orange-500/20 text-orange-400 mt-0.5 shrink-0">
+                <i data-lucide="link" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-white text-sm sm:text-base">Motores de Alta Tracción</h4>
+                <p class="text-xs text-slate-300">Cadena y pistones para portones ligeros y pesados.</p>
+              </div>
+            </div>
+
+            <div class="bg-[#0B2545]/85 backdrop-blur-md p-4 rounded-xl flex items-start gap-3 border border-white/20">
+              <div class="p-2 rounded-lg bg-orange-500/20 text-orange-400 mt-0.5 shrink-0">
+                <i data-lucide="zap" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-white text-sm sm:text-base">Batería de Respaldo</h4>
+                <p class="text-xs text-slate-300">Operación continua ante cualquier corte eléctrico.</p>
+              </div>
+            </div>
+
+            <div class="bg-[#0B2545]/85 backdrop-blur-md p-4 rounded-xl flex items-start gap-3 border border-white/20">
+              <div class="p-2 rounded-lg bg-orange-500/20 text-orange-400 mt-0.5 shrink-0">
+                <i data-lucide="hard-hat" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-white text-sm sm:text-base">Instalación Profesional</h4>
+                <p class="text-xs text-slate-300">Alineación milimétrica y fijación estructural garantizada.</p>
+              </div>
+            </div>
+
+            <div class="bg-[#0B2545]/85 backdrop-blur-md p-4 rounded-xl flex items-start gap-3 border border-white/20">
+              <div class="p-2 rounded-lg bg-orange-500/20 text-orange-400 mt-0.5 shrink-0">
+                <i data-lucide="shield-alert" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-white text-sm sm:text-base">Fotoceldas de Seguridad</h4>
+                <p class="text-xs text-slate-300">Detección anti-impacto para autos, personas y mascotas.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-2 sm:pt-4">
+            <button onclick="quoteService('Fabricación e Instalación de Portones')" class="btn-primary-orange px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl font-bold text-sm sm:text-base flex items-center gap-2.5">
+              <i data-lucide="calculator" class="w-4 sm:w-5 h-4 sm:h-5"></i>
+              <span>Cotizar Sistema con Batería de Respaldo</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 reveal-right mt-6 lg:mt-0">
+          <div class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-2xl relative space-y-5">
+            <div class="flex justify-between items-center pb-4 border-b border-slate-100">
+              <span class="text-xs font-bold text-brand-orange uppercase tracking-wider">Especificaciones SSA</span>
+              <span class="px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-600 text-xs font-bold border border-emerald-200">100% Confiable</span>
+            </div>
+            
+            <div class="space-y-3.5 text-xs sm:text-sm text-slate-600">
+              <div class="flex justify-between py-1.5 border-b border-slate-100">
+                <span class="text-slate-500">Tipo de Portón:</span>
+                <span class="font-bold text-[#0B2545]">Corredizo, Seccional, Abatible, Ascendente</span>
+              </div>
+              <div class="flex justify-between py-1.5 border-b border-slate-100">
+                <span class="text-slate-500">Marcas Soportadas:</span>
+                <span class="font-bold text-[#0B2545]">Merik, Chamberlain, LiftMaster, SEG, Erreka</span>
+              </div>
+              <div class="flex justify-between py-1.5 border-b border-slate-100">
+                <span class="text-slate-500">Tiempo de Respuesta:</span>
+                <span class="font-bold text-[#0B2545]">Inmediato en Durango</span>
+              </div>
+              <div class="flex justify-between py-1.5 border-b border-slate-100">
+                <span class="text-slate-500">Garantía:</span>
+                <span class="font-bold text-brand-orange">Garantía por Escrito Incluida</span>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 text-center">
+              <p class="text-xs text-slate-500 font-semibold">¡SSA DURANGO, TU MEJOR SOLUCIÓN!</p>
+              <a href="https://wa.me/526183032358" target="_blank" class="text-base sm:text-lg font-black text-[#0B2545] font-heading mt-1.5 hover:text-brand-orange transition-colors inline-flex items-center justify-center gap-2">
+                <img src="assets/images/whatsapp.png" alt="WhatsApp" class="w-5 h-5 sm:w-6 sm:h-6 object-contain shrink-0">
+                <span>618 303 2358</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. SECCIÓN DESTACADA: PORTONES PREMIUM & CELOSÍAS ARQUITECTÓNICAS
+       ========================================================================= -->
+  <section id="premium-celosias" class="fixed-bg-section bg-section-premium py-20 sm:py-24 relative">
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Encabezado de la Línea Premium -->
+      <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-14 space-y-3 sm:space-y-4">
+        <span class="text-brand-orange uppercase text-xs sm:text-sm font-extrabold tracking-widest reveal-init">
+          Gama de Alta Exclusividad • Materiales Reforzados
+        </span>
+        <h2 class="text-2xl sm:text-4xl md:text-5xl font-black text-[#0B2545] font-heading leading-tight reveal-init delay-100">
+          Portones Residenciales & <span class="text-gradient-orange">Celosías de Corte CNC</span>
+        </h2>
+        <p class="text-[#475569] text-sm sm:text-base md:text-lg reveal-init delay-200">
+          Diseñados para quienes buscan distinción arquitectónica, seguridad y máxima durabilidad. Fabricados con acero de calibre estructural, patrones CNC milimétricos y acabados horneados de lujo.
+        </p>
+      </div>
+
+      <!-- Bento Grid Destacado: Tarjetas Laterales Derechas Agrupadas -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-start mb-12 sm:mb-16">
+        
+        <!-- Tarjeta Principal: Celosías de Corte Láser CNC -->
+        <div class="lg:col-span-7 bg-white rounded-3xl p-6 sm:p-10 border border-blue-200 shadow-xl relative overflow-hidden flex flex-col justify-between reveal-left">
+          <div class="space-y-4 sm:space-y-6">
+            <div class="flex justify-between items-center">
+              <span class="px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-bold border border-blue-200">
+                Tecnología CNC Láser
+              </span>
+              <div class="w-10 sm:w-12 h-10 sm:h-12 rounded-2xl bg-amber-50 text-brand-yellow border border-amber-200 flex items-center justify-center shrink-0">
+                <i data-lucide="sparkles" class="w-5 sm:w-6 h-5 sm:h-6"></i>
+              </div>
+            </div>
+
+            <h3 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0B2545] font-heading">
+              Celosías de Corte Láser CNC a la Medida
+            </h3>
+            <p class="text-slate-600 text-xs sm:text-sm md:text-base leading-relaxed">
+              Las celosías son paneles de placa de acero cortados por control numérico (CNC). Permiten plasmar figuras geométricas, florales o personalizadas, logrando una vista moderna, ventilación natural y privacidad en tu cochera o fachada.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs sm:text-sm text-slate-700">
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-200 flex items-center gap-2.5">
+                <i data-lucide="check" class="w-4 sm:w-5 h-4 sm:h-5 text-emerald-600 shrink-0"></i>
+                <span>Corte computarizado de alta definición</span>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-200 flex items-center gap-2.5">
+                <i data-lucide="check" class="w-4 sm:w-5 h-4 sm:h-5 text-emerald-600 shrink-0"></i>
+                <span>Diseños exclusivos que incrementan plusvalía</span>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-200 flex items-center gap-2.5">
+                <i data-lucide="check" class="w-4 sm:w-5 h-4 sm:h-5 text-emerald-600 shrink-0"></i>
+                <span>Calibre grueso resistente al impacto</span>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-200 flex items-center gap-2.5">
+                <i data-lucide="check" class="w-4 sm:w-5 h-4 sm:h-5 text-emerald-600 shrink-0"></i>
+                <span>Privacidad visual con paso de luz natural</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-6 sm:pt-8 mt-6 sm:mt-8 border-t border-slate-100 grid grid-cols-1 sm:grid-cols-12 gap-5 items-center">
+            <div class="sm:col-span-7 space-y-3.5">
+              <div class="text-xs sm:text-sm text-slate-500 font-medium">
+                Fabricado bajo medidas exactas en nuestro taller en Durango.
+              </div>
+              <button onclick="quoteService('Herrería Residencial & Corte CNC')" class="btn-primary-orange px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl font-bold text-xs sm:text-sm flex items-center gap-2">
+                <i data-lucide="calculator" class="w-4 h-4"></i>
+                <span>Cotizar Portón con Celosía</span>
+              </button>
+            </div>
+
+            <!-- Imagen PNG de la Celosía en la parte inferior derecha -->
+            <div class="sm:col-span-5 flex justify-center sm:justify-end items-center">
+              <div class="relative group w-full max-w-[240px] flex justify-center sm:justify-end">
+                <div class="absolute -inset-1.5 bg-gradient-to-tr from-amber-100 via-orange-50 to-blue-100 rounded-2xl blur-md opacity-70 group-hover:opacity-100 transition-opacity"></div>
+                <img src="assets/images/porton-celosia-cnc.png" alt="Portón con Celosía Arquitectónica de Corte Láser CNC SSA Durango" class="relative w-full h-auto max-h-36 sm:max-h-44 object-contain rounded-xl drop-shadow-xl hover:scale-105 transition-transform duration-300">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna Lateral Derecha: Cuadros Juntos y Compactos -->
+        <div class="lg:col-span-5 space-y-3 sm:space-y-4 flex flex-col reveal-right mt-6 lg:mt-0">
+          
+          <!-- Tarjeta Calibre Superior -->
+          <div class="bg-white p-5 sm:p-7 rounded-3xl border border-blue-200 shadow-xl relative space-y-2.5 sm:space-y-3">
+            <div class="w-10 sm:w-12 h-10 sm:h-12 rounded-2xl bg-orange-50 text-brand-orange border border-orange-200 flex items-center justify-center">
+              <i data-lucide="layers" class="w-5 sm:w-6 h-5 sm:h-6"></i>
+            </div>
+            <h4 class="text-lg sm:text-xl font-bold text-[#0B2545] font-heading">Acero de Calibre Estructural</h4>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Utilizamos perfiles y láminas de calibre pesado que eliminan cualquier vibración, pandeo o desgaste prematuro por viento o uso rudo continuo.
+            </p>
+          </div>
+
+          <!-- Tarjeta Pintura Electrostática & Texturizados Madera -->
+          <div class="bg-white p-5 sm:p-7 rounded-3xl border border-blue-200 shadow-xl relative space-y-2.5 sm:space-y-3">
+            <div class="w-10 sm:w-12 h-10 sm:h-12 rounded-2xl bg-blue-50 text-brand-blue border border-blue-200 flex items-center justify-center">
+              <i data-lucide="paint-bucket" class="w-5 sm:w-6 h-5 sm:h-6"></i>
+            </div>
+            <h4 class="text-lg sm:text-xl font-bold text-[#0B2545] font-heading">Pintura Electrostática & Madera</h4>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Tratamiento anticorrosivo y pintura electrostática horneada de grado arquitectónico. Opción de insertos con apariencia madera nogal, teka o roble libre de mantenimiento.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Cuadro Comparativo Claro: Estándar vs Línea PREMIUM SSA -->
+      <div class="bg-white rounded-3xl p-5 sm:p-8 border border-blue-200 shadow-lg overflow-x-auto reveal-init">
+        <h4 class="font-heading font-bold text-lg sm:text-xl text-[#0B2545] mb-4 flex items-center gap-2">
+          <i data-lucide="award" class="w-5 h-5 text-brand-yellow shrink-0"></i>
+          <span>¿Por qué elegir la Línea PREMIUM de SSA Durango?</span>
+        </h4>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs sm:text-sm text-slate-700 min-w-[540px]">
+            <thead>
+              <tr class="border-b border-slate-200 text-slate-500 bg-slate-50">
+                <th class="py-3 px-3 sm:px-4 font-bold text-[#0B2545]">Aspecto</th>
+                <th class="py-3 px-3 sm:px-4 font-semibold text-slate-500">Portón Convencional</th>
+                <th class="py-3 px-3 sm:px-4 font-extrabold text-blue-700 bg-blue-50/70">Línea PREMIUM & Celosías SSA</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100">
+              <tr>
+                <td class="py-3 px-3 sm:px-4 font-bold text-[#0B2545]">Calibre de Acero</td>
+                <td class="py-3 px-3 sm:px-4 text-slate-500">Lámina delgada susceptible a abollarse</td>
+                <td class="py-3 px-3 sm:px-4 font-bold text-emerald-600 bg-blue-50/40 flex items-center gap-1.5"><i data-lucide="check" class="w-4 h-4 shrink-0"></i> Calibre pesado estructural reforzado</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-3 sm:px-4 font-bold text-[#0B2545]">Corte y Detalle</td>
+                <td class="py-3 px-3 sm:px-4 text-slate-500">Cortes manuales con rebabas visibles</td>
+                <td class="py-3 px-3 sm:px-4 font-bold text-emerald-600 bg-blue-50/40 flex items-center gap-1.5"><i data-lucide="check" class="w-4 h-4 shrink-0"></i> Corte CNC Láser de precisión milimétrica</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-3 sm:px-4 font-bold text-[#0B2545]">Tratamiento y Acabado</td>
+                <td class="py-3 px-3 sm:px-4 text-slate-500">Esmalte convencional que se descascara</td>
+                <td class="py-3 px-3 sm:px-4 font-bold text-emerald-600 bg-blue-50/40 flex items-center gap-1.5"><i data-lucide="check" class="w-4 h-4 shrink-0"></i> Pintura electrostática horneada + acabado madera</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-3 sm:px-4 font-bold text-[#0B2545]">Automatización</td>
+                <td class="py-3 px-3 sm:px-4 text-slate-500">Motor básico sin respaldo</td>
+                <td class="py-3 px-3 sm:px-4 font-bold text-emerald-600 bg-blue-50/40 flex items-center gap-1.5"><i data-lucide="check" class="w-4 h-4 shrink-0"></i> Motor de alto ciclo con batería de respaldo incluida</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6.1 NUEVA SECCIÓN: CONTROL DE ACCESO PARA FRACCIONAMIENTOS Y PRIVADAS
+       ========================================================================= -->
+  <section id="fraccionamientos" class="fixed-bg-section bg-section-fraccionamientos py-20 sm:py-28 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Encabezado Fraccionamientos -->
+      <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-3 sm:space-y-4">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full tech-badge-dark text-xs sm:text-sm font-semibold text-sky-300 reveal-init backdrop-blur-md">
+          <i data-lucide="building-2" class="w-4 h-4 text-sky-400"></i>
+          <span>Soluciones para Comités de Vecinos y Administradores</span>
+        </div>
+        <h2 class="text-2xl sm:text-4xl md:text-5xl font-black text-white font-heading leading-tight reveal-init delay-100 hero-text-shadow">
+          Control de Acceso e Infraestructura para <span class="text-sky-300 font-black">Fraccionamientos y Privadas</span>
+        </h2>
+        <p class="text-slate-100 text-sm sm:text-base md:text-lg reveal-init delay-200 hero-text-shadow">
+          Entendemos la importancia de mantener un acceso vehicular fluido, seguro y sin fallas para todos los residentes. Ofrecemos equipamiento de uso continuo, tecnología de proximidad RFID y pólizas de mantenimiento preventivo confiables en Durango.
+        </p>
+      </div>
+
+      <!-- 4 Tarjetas de Soluciones para Fraccionamientos -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-12 sm:mb-16">
+        
+        <!-- Tarjeta 1 -->
+        <div class="bg-white/95 backdrop-blur-md rounded-2xl p-6 border border-slate-200 shadow-xl flex flex-col justify-between reveal-scale delay-100">
+          <div class="space-y-3">
+            <div class="w-12 h-12 rounded-xl bg-sky-50 text-sky-600 flex items-center justify-center border border-sky-200">
+              <i data-lucide="shield-check" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-[#0B2545] font-heading">Barreras de Uso Continuo</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+              Mecanismos diseñados para soportar cientos de aperturas diarias sin sobrecalentamiento, con brazos articulados o rectos y sensores de seguridad anti-impacto.
+            </p>
+          </div>
+          <div class="pt-4 mt-4 border-t border-slate-100">
+            <span class="text-[11px] font-bold text-sky-600 uppercase tracking-wider">Alto Flujo Vehicular</span>
+          </div>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="bg-white/95 backdrop-blur-md rounded-2xl p-6 border border-slate-200 shadow-xl flex flex-col justify-between reveal-scale delay-200">
+          <div class="space-y-3">
+            <div class="w-12 h-12 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center border border-blue-200">
+              <i data-lucide="radio" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-[#0B2545] font-heading">Lectores Tag RFID & Proximidad</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+              Apertura automática a distancia al detectar el Tag vehicular adherido al parabrisas del residente, agilizando el flujo y restringiendo el ingreso no autorizado.
+            </p>
+          </div>
+          <div class="pt-4 mt-4 border-t border-slate-100">
+            <span class="text-[11px] font-bold text-brand-blue uppercase tracking-wider">Acceso Automatizado</span>
+          </div>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="bg-white/95 backdrop-blur-md rounded-2xl p-6 border border-slate-200 shadow-xl flex flex-col justify-between reveal-scale delay-300">
+          <div class="space-y-3">
+            <div class="w-12 h-12 rounded-xl bg-orange-50 text-brand-orange flex items-center justify-center border border-orange-200">
+              <i data-lucide="battery-charging" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-[#0B2545] font-heading">Respaldo ante Cortes Eléctricos</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+              Bancos de baterías integrados que mantienen operativas las barreras y portones principales aun durante apagones o tormentas eléctricas en Durango.
+            </p>
+          </div>
+          <div class="pt-4 mt-4 border-t border-slate-100">
+            <span class="text-[11px] font-bold text-brand-orange uppercase tracking-wider">Operación Ininterrumpida</span>
+          </div>
+        </div>
+
+        <!-- Tarjeta 4 -->
+        <div class="bg-white/95 backdrop-blur-md rounded-2xl p-6 border border-slate-200 shadow-xl flex flex-col justify-between reveal-scale delay-400">
+          <div class="space-y-3">
+            <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center border border-emerald-200">
+              <i data-lucide="calendar-check" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-[#0B2545] font-heading">Pólizas de Mantenimiento Mensual</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+              Planes de revisión técnica programada, calibración mecánica y atención prioritaria para administradores, evitando que el fraccionamiento quede vulnerable.
+            </p>
+          </div>
+          <div class="pt-4 mt-4 border-t border-slate-100">
+            <span class="text-[11px] font-bold text-emerald-600 uppercase tracking-wider">Tranquilidad para el Comité</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Banner CTA Fraccionamientos -->
+      <div class="bg-gradient-to-r from-[#0B2545] to-[#134E5E] rounded-3xl p-6 sm:p-10 border border-white/20 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-6 reveal-init">
+        <div class="space-y-2 text-center md:text-left">
+          <span class="text-amber-300 text-xs font-black uppercase tracking-wider">Atención Especializada a Comités y Desarrolladores</span>
+          <h3 class="text-xl sm:text-2xl md:text-3xl font-extrabold text-white font-heading">
+            ¿Buscas equipar o reparar el acceso de tu privada?
+          </h3>
+          <p class="text-slate-200 text-xs sm:text-sm max-w-xl">
+            Acudimos a tu fraccionamiento para una demostración técnica y diagnóstico sin costo. Facturación formal y garantía por escrito.
+          </p>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-3 shrink-0 w-full md:w-auto">
+          <button onclick="quoteService('Acceso para Fraccionamientos y Privadas')" class="btn-primary-orange px-6 py-3.5 rounded-xl font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-lg">
+            <i data-lucide="calculator" class="w-4 h-4"></i>
+            <span>Solicitar Propuesta para Privada</span>
+          </button>
+          <a href="https://wa.me/526183032358?text=Hola%20SSA%20Durango,%20administro%20una%20privada%20o%20fraccionamiento%20y%20deseo%20una%20propuesta" target="_blank" class="bg-white/15 hover:bg-white/25 text-white backdrop-blur-md border border-white/25 px-5 py-3.5 rounded-xl font-bold text-xs sm:text-sm transition-all flex items-center justify-center gap-2">
+            <i data-lucide="phone" class="w-4 h-4"></i>
+            <span>618 303 2358</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       7 & 8. SECCIONES CONTINUAS: CERRADURAS SMART & CLIMAS (MISMO FONDO Y FILTRO AL 30%)
+       ========================================================================= -->
+  <div class="fixed-bg-section bg-section-smart-locks relative">
+    
+    <!-- 7. SHOWCASE 2: CERRADURAS SMART & ACCESO DIGITAL -->
+    <section id="cerraduras" class="pt-20 sm:pt-28 pb-12 sm:pb-16 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+
+          <div class="lg:col-span-6 order-2 lg:order-1 reveal-left mt-6 lg:mt-0">
+            <div class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-2xl space-y-5">
+              <h3 class="text-xl sm:text-2xl font-bold text-[#0B2545] font-heading">
+                4 <span class="text-brand-orange font-black">Modos de Acceso</span> en una Sola Cerradura
+              </h3>
+              
+              <div class="grid grid-cols-1 sm:grid-cols-12 gap-4 sm:gap-6 items-center">
+                
+                <!-- 4 Modos de Acceso (Lado Izquierdo) -->
+                <div class="sm:col-span-7 space-y-2.5 order-2 sm:order-1">
+                  <div class="flex items-center gap-3 p-2.5 sm:p-3 rounded-xl bg-slate-50 hover:bg-blue-50 transition-colors border border-slate-100">
+                    <div class="w-8 sm:w-9 h-8 sm:h-9 rounded-lg bg-blue-100 text-brand-blue flex items-center justify-center font-extrabold text-xs sm:text-sm shrink-0">1</div>
+                    <div>
+                      <h5 class="text-[#0B2545] font-bold text-xs sm:text-sm">Huella Biométrica</h5>
+                      <p class="text-[11px] sm:text-xs text-slate-500">Reconocimiento ultra-rápido en 0.3s.</p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-center gap-3 p-2.5 sm:p-3 rounded-xl bg-slate-50 hover:bg-blue-50 transition-colors border border-slate-100">
+                    <div class="w-8 sm:w-9 h-8 sm:h-9 rounded-lg bg-blue-100 text-brand-blue flex items-center justify-center font-extrabold text-xs sm:text-sm shrink-0">2</div>
+                    <div>
+                      <h5 class="text-[#0B2545] font-bold text-xs sm:text-sm">App Móvil Wi-Fi/Bluetooth</h5>
+                      <p class="text-[11px] sm:text-xs text-slate-500">Abre a distancia y revisa historial.</p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-center gap-3 p-2.5 sm:p-3 rounded-xl bg-slate-50 hover:bg-blue-50 transition-colors border border-slate-100">
+                    <div class="w-8 sm:w-9 h-8 sm:h-9 rounded-lg bg-blue-100 text-brand-blue flex items-center justify-center font-extrabold text-xs sm:text-sm shrink-0">3</div>
+                    <div>
+                      <h5 class="text-[#0B2545] font-bold text-xs sm:text-sm">Contraseña Digital Touch</h5>
+                      <p class="text-[11px] sm:text-xs text-slate-500">Códigos fijos o temporales para visitas.</p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-center gap-3 p-2.5 sm:p-3 rounded-xl bg-slate-50 hover:bg-blue-50 transition-colors border border-slate-100">
+                    <div class="w-8 sm:w-9 h-8 sm:h-9 rounded-lg bg-blue-100 text-brand-blue flex items-center justify-center font-extrabold text-xs sm:text-sm shrink-0">4</div>
+                    <div>
+                      <h5 class="text-[#0B2545] font-bold text-xs sm:text-sm">Tarjeta RFID & Llave Física</h5>
+                      <p class="text-[11px] sm:text-xs text-slate-500">Llavero de proximidad o llave bancaria.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Imagen de la Cerradura Digital Smart (Lado Derecho) -->
+                <div class="sm:col-span-5 flex justify-center items-center py-1 order-1 sm:order-2">
+                  <div class="relative group">
+                    <div class="absolute -inset-2 bg-gradient-to-tr from-blue-100 to-orange-100 rounded-2xl blur-md opacity-60 group-hover:opacity-100 transition-opacity"></div>
+                    <img src="assets/images/cerradura-smart.png" alt="Cerradura Inteligente Smart Biométrica SSA" class="relative max-h-60 sm:max-h-72 w-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-300">
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6 order-1 lg:order-2 space-y-4 sm:space-y-6 reveal-right">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0B2545]/80 text-sky-300 text-xs sm:text-sm font-bold border border-sky-400/40 backdrop-blur-md shadow-sm">
+              <i data-lucide="lock" class="w-4 h-4 text-sky-400"></i>
+              <span>Seguridad Inteligente • Residencial y Comercial</span>
+            </div>
+            <h2 class="text-2xl sm:text-4xl md:text-5xl font-black text-white font-heading leading-tight hero-text-shadow">
+              Control Total de tus Puertas <span class="text-sky-300 font-black">Desde la Palma de tu Mano</span>
+            </h2>
+            <p class="text-slate-100 text-sm sm:text-base md:text-lg leading-relaxed hero-text-shadow">
+              Sustituye las llaves tradicionales por tecnología biométrica y digital. Controla quién entra a tu casa, oficina o departamentos en renta, genera códigos temporales y consulta el historial de aperturas en tiempo real.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs sm:text-sm font-medium">
+              <div class="flex items-center gap-2.5 p-2.5 rounded-xl bg-[#0B2545]/75 border border-white/15 backdrop-blur-sm text-slate-100"><i data-lucide="check" class="text-brand-orange w-4 sm:w-5 h-4 sm:h-5 shrink-0"></i> Compatible con madera, herrería y aluminio</div>
+              <div class="flex items-center gap-2.5 p-2.5 rounded-xl bg-[#0B2545]/75 border border-white/15 backdrop-blur-sm text-slate-100"><i data-lucide="check" class="text-brand-orange w-4 sm:w-5 h-4 sm:h-5 shrink-0"></i> Alarma sonora antirobo contra forzado</div>
+              <div class="flex items-center gap-2.5 p-2.5 rounded-xl bg-[#0B2545]/75 border border-white/15 backdrop-blur-sm text-slate-100"><i data-lucide="check" class="text-brand-orange w-4 sm:w-5 h-4 sm:h-5 shrink-0"></i> Baterías de hasta 12 meses de duración</div>
+              <div class="flex items-center gap-2.5 p-2.5 rounded-xl bg-[#0B2545]/75 border border-white/15 backdrop-blur-sm text-slate-100"><i data-lucide="check" class="text-brand-orange w-4 sm:w-5 h-4 sm:h-5 shrink-0"></i> Instalación y capacitación técnica en Durango</div>
+            </div>
+
+            <div class="pt-2 sm:pt-4">
+              <button onclick="quoteService('Cerraduras Digitales & Control Smart')" class="btn-primary-orange px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl font-bold text-sm sm:text-base flex items-center gap-2.5 shadow-xl">
+                <i data-lucide="calculator" class="w-4 sm:w-5 h-4 sm:h-5"></i>
+                <span>Solicitar Cotización de Cerradura Smart</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Transición limpia continua entre ambas secciones -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="border-t border-white/15"></div>
+    </div>
+
+    <!-- 8. NUEVA SECCIÓN: CLIMAS Y MINISPLITS (CONFORT TÉRMICO) -->
+    <section id="climas" class="pt-12 sm:pt-16 pb-20 sm:pb-28 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+        <div class="max-w-3xl mx-auto space-y-4 sm:space-y-6 reveal-init">
+          <div class="inline-flex items-center gap-2 px-3.5 sm:px-4 py-1.5 rounded-full bg-[#0B2545]/80 text-cyan-300 text-xs sm:text-sm font-bold border border-cyan-400/40 backdrop-blur-md shadow-sm">
+            <i data-lucide="snowflake" class="w-4 h-4 text-cyan-400 shrink-0"></i>
+            <span>❄️ Climatización Confort • Residencial y Comercial</span>
+          </div>
+          <h2 class="text-2xl sm:text-4xl md:text-5xl font-black text-white font-heading hero-text-shadow">
+            Instalación y Servicio Técnico de <span class="text-sky-300 font-black">Minisplits en Durango</span>
+          </h2>
+          <p class="text-slate-100 text-sm sm:text-base md:text-lg leading-relaxed font-medium hero-text-shadow">
+            Mantén tus espacios frescos en temporada de calor y cálidos en invierno. Ofrecemos instalación estética profesional, mantenimiento preventivo con lavado profundo y reparación de equipos de todas las marcas.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4 sm:pt-6 text-left">
+            <div class="bg-white/95 backdrop-blur-md p-5 rounded-2xl border border-white/20 shadow-xl hover:shadow-2xl transition-all">
+              <div class="w-10 h-10 rounded-xl bg-cyan-50 text-cyan-600 flex items-center justify-center mb-3 border border-cyan-200">
+                <i data-lucide="wrench" class="w-5 h-5"></i>
+              </div>
+              <h5 class="text-[#0B2545] font-bold text-sm sm:text-base">Instalación Estética y Segura</h5>
+              <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">Montaje nivelado, tubería aislada sin fugas de refrigerante y fijación firme en azotea o muro.</p>
+            </div>
+
+            <div class="bg-white/95 backdrop-blur-md p-5 rounded-2xl border border-white/20 shadow-xl hover:shadow-2xl transition-all">
+              <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3 border border-emerald-200">
+                <i data-lucide="sparkles" class="w-5 h-5"></i>
+              </div>
+              <h5 class="text-[#0B2545] font-bold text-sm sm:text-base">Mantenimiento Profundo</h5>
+              <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">Lavado a presión de serpentín y turbina, desinfección contra bacterias, moho y malos olores.</p>
+            </div>
+
+            <div class="bg-white/95 backdrop-blur-md p-5 rounded-2xl border border-white/20 shadow-xl hover:shadow-2xl transition-all">
+              <div class="w-10 h-10 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center mb-3 border border-blue-200">
+                <i data-lucide="gauge" class="w-5 h-5"></i>
+              </div>
+              <h5 class="text-[#0B2545] font-bold text-sm sm:text-base">Diagnóstico y Recarga de Gas</h5>
+              <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">Detección de fugas, vacío con bomba y recarga precisa con gas refrigerante ecológico.</p>
+            </div>
+
+            <div class="bg-white/95 backdrop-blur-md p-5 rounded-2xl border border-white/20 shadow-xl hover:shadow-2xl transition-all">
+              <div class="w-10 h-10 rounded-xl bg-orange-50 text-brand-orange flex items-center justify-center mb-3 border border-orange-200">
+                <i data-lucide="shield-check" class="w-5 h-5"></i>
+              </div>
+              <h5 class="text-[#0B2545] font-bold text-sm sm:text-base">Garantía por Escrito</h5>
+              <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">Técnicos calificados que cuidan la vida de tu equipo y aseguran el menor consumo de luz.</p>
+            </div>
+          </div>
+
+          <div class="pt-6 sm:pt-8 flex justify-center">
+            <button onclick="quoteService('Instalación y Mantenimiento de Minisplits')" class="btn-primary-orange px-8 sm:px-10 py-3.5 sm:py-4 rounded-xl text-sm sm:text-base flex items-center gap-2.5 shadow-xl font-bold">
+              <i data-lucide="calculator" class="w-4 sm:w-5 h-4 sm:h-5"></i>
+              <span>Cotizar Servicio de Minisplit</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- =========================================================================
+       8.1 NUEVA SECCIÓN: RED DE ALIADOS (B2B HERREROS E INSTALADORES)
+       ========================================================================= -->
+  <section id="red-aliados" class="fixed-bg-section bg-section-red-aliados py-20 sm:py-28 relative text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+
+        <!-- Columna Izquierda: Propuesta de Valor B2B -->
+        <div class="lg:col-span-7 space-y-4 sm:space-y-6 reveal-left">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-extrabold border border-amber-400/50 shadow-lg" style="background-color: rgba(217, 119, 6, 0.4); backdrop-filter: blur(6px);">
+            <i data-lucide="users" class="w-4 h-4 text-amber-300"></i>
+            <span>Red de Aliados B2B • SSA Durango</span>
+          </div>
+
+          <h2 class="text-2xl sm:text-4xl md:text-5xl font-extrabold text-white font-heading leading-tight hero-text-shadow">
+            ¿Eres Herrero, Técnico o Instalador en Durango? <span class="text-amber-400 font-black">Únete a Nuestra Red</span>
+          </h2>
+
+          <p class="text-slate-100 text-sm sm:text-base md:text-lg leading-relaxed hero-text-shadow">
+            Queremos ser tu socio de confianza. Ponemos a tu disposición precios preferenciales de mayoreo en motores para portones, baterías de respaldo, cerraduras digitales, refacciones originales y respaldo técnico para tus proyectos.
+          </p>
+
+          <div class="space-y-3.5 pt-2">
+            <div class="flex items-start gap-3 p-3.5 rounded-2xl bg-[#0B2545]/80 border border-white/15 backdrop-blur-md">
+              <div class="p-2 rounded-xl bg-amber-500/20 text-amber-300 shrink-0 mt-0.5">
+                <i data-lucide="badge-percent" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-white text-sm sm:text-base">Precios de Mayoreo y Descuentos Exclusivos</h4>
+                <p class="text-xs text-slate-300">Tarifas preferenciales en motores Merik, LiftMaster, SEG y cerraduras para que aumentes tu margen de ganancia.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3 p-3.5 rounded-2xl bg-[#0B2545]/80 border border-white/15 backdrop-blur-md">
+              <div class="p-2 rounded-xl bg-amber-500/20 text-amber-300 shrink-0 mt-0.5">
+                <i data-lucide="package-check" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-white text-sm sm:text-base">Stock Inmediato en Durango</h4>
+                <p class="text-xs text-slate-300">Sin demoras de paquetería. Disponibilidad local de equipos, controles remotos, cremalleras, fotoceldas y baterías.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3 p-3.5 rounded-2xl bg-[#0B2545]/80 border border-white/15 backdrop-blur-md">
+              <div class="p-2 rounded-xl bg-amber-500/20 text-amber-300 shrink-0 mt-0.5">
+                <i data-lucide="headset" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-white text-sm sm:text-base">Asesoría Técnica y Respaldo</h4>
+                <p class="text-xs text-slate-300">Apoyo en diagramas de conexión, configuración de tarjetas electrónicas y solución de dudas en obra.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna Derecha: Formulario de Registro Rápido B2B -->
+        <div class="lg:col-span-5 reveal-right mt-6 lg:mt-0">
+          <div class="bg-white rounded-3xl p-6 sm:p-8 text-[#0B2545] shadow-2xl border border-amber-300/40">
+            <div class="text-center mb-5">
+              <span class="px-3 py-1 rounded-full bg-amber-100 text-amber-900 text-xs font-bold border border-amber-200">Registro Rápido de Profesionales</span>
+              <h3 class="text-xl sm:text-2xl font-black mt-2 font-heading text-[#0B2545]">Acceso a Precios de Mayoreo</h3>
+              <p class="text-xs text-slate-500 mt-1">Completa tus datos y recibe nuestro catálogo de precios con descuento vía WhatsApp.</p>
+            </div>
+
+            <form id="b2b-register-form" class="space-y-3.5">
+              <div>
+                <label for="b2b-name" class="block text-xs font-bold mb-1 text-[#0B2545]">Nombre Completo *</label>
+                <input type="text" id="b2b-name" required placeholder="Ej. Juan Manuel Torres" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-[#0B2545] focus:outline-none focus:border-brand-orange transition-colors">
+              </div>
+
+              <div>
+                <label for="b2b-role" class="block text-xs font-bold mb-1 text-[#0B2545]">Oficio o Giro Principal *</label>
+                <select id="b2b-role" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-[#0B2545] focus:outline-none focus:border-brand-orange transition-colors">
+                  <option value="Herrero independiente / Taller de Herrería">Herrero independiente / Taller de Herrería</option>
+                  <option value="Técnico Instalador de Portones Eléctricos">Técnico Instalador de Portones Eléctricos</option>
+                  <option value="Electricista / Integrador de Seguridad">Electricista / Integrador de Seguridad</option>
+                  <option value="Contratista / Administrador de Obras">Contratista / Administrador de Obras</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="b2b-phone" class="block text-xs font-bold mb-1 text-[#0B2545]">WhatsApp / Teléfono Celular *</label>
+                <input type="tel" id="b2b-phone" required placeholder="Ej. 618 123 4567" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-[#0B2545] focus:outline-none focus:border-brand-orange transition-colors">
+              </div>
+
+              <div>
+                <label for="b2b-notes" class="block text-xs font-bold mb-1 text-[#0B2545]">Equipos que más utilizas (Opcional)</label>
+                <input type="text" id="b2b-notes" placeholder="Ej. Motores de cadena, controles, cerraduras smart..." class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-[#0B2545] focus:outline-none focus:border-brand-orange transition-colors">
+              </div>
+
+              <button type="submit" class="w-full btn-primary-orange py-3 rounded-xl font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-lg">
+                <i data-lucide="handshake" class="w-4 h-4"></i>
+                <span>Registrarme para Precios Especiales</span>
+              </button>
+
+              <div id="b2b-confirm-msg" class="hidden p-3 rounded-xl bg-emerald-50 border border-emerald-300 text-emerald-800 text-xs text-center font-medium">
+                ¡Registro recibido! Te contactaremos de inmediato con la lista de precios preferenciales.
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       10. ASISTENTE / CALCULADORA DE COTIZACIÓN RÁPIDA (WHATSAPP)
+       ========================================================================= -->
+  <section id="cotizador" class="py-16 sm:py-24 bg-section-quote-cta fixed-bg-section relative">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Encabezado Flotante sobre el Fondo Oscuro (Estilo Portones: Blanco, Naranja y Gris Claro) -->
+      <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-12 space-y-3 sm:space-y-4 reveal-init">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-white text-xs sm:text-sm font-extrabold border border-orange-300/70 shadow-lg" style="background-color: rgba(234, 88, 12, 0.65); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);">
+          <i data-lucide="zap" class="w-4 h-4 text-amber-200"></i>
+          <span>Respuesta Inmediata</span>
+        </div>
+        <h2 class="text-2xl sm:text-4xl md:text-5xl font-extrabold text-white font-heading leading-tight hero-text-shadow">
+          Asistente de <span class="text-[#FF6600] font-black">Cotización Rápida</span>
+        </h2>
+        <p class="text-slate-200 text-sm sm:text-base md:text-lg max-w-2xl mx-auto leading-relaxed hero-text-shadow">
+          Selecciona lo que necesitas y nuestro sistema preparará tu mensaje directo para atención técnica inmediata por WhatsApp.
+        </p>
+      </div>
+
+      <!-- Cuadro Blanco de Formulario (Compacto y Enfocado) -->
+      <div class="bg-white p-6 sm:p-8 md:p-10 rounded-3xl border border-slate-200 shadow-2xl reveal-init delay-100">
+        <form id="quick-quote-form" class="space-y-4 sm:space-y-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+            
+            <!-- Campo 1: Servicio -->
+            <div>
+              <label for="quote-service" class="block text-xs sm:text-sm font-bold text-[#0B2545] mb-1.5 sm:mb-2">Servicio Requerido *</label>
+              <select id="quote-service" class="w-full bg-[#F8FAFC] border border-slate-300 rounded-xl px-3.5 sm:px-4 py-3 sm:py-3.5 text-xs sm:text-sm text-[#0B2545] font-medium focus:outline-none focus:border-brand-orange transition-colors">
+                <option value="Mantenimiento Preventivo y Correctivo">Mantenimiento Preventivo / Reparación Urgente</option>
+                <option value="Fabricación e Instalación de Portones">Fabricación de Portón Eléctrico (con Motor y Batería)</option>
+                <option value="✨ Portón Línea PREMIUM con Celosías CNC">✨ Portón Línea PREMIUM con Celosías CNC</option>
+                <option value="Acceso para Fraccionamientos y Privadas">Acceso para Fraccionamientos y Privadas (Barreras/RFID)</option>
+                <option value="Automatización de Portón Existente">Automatización de Portón Existente (Motor y Batería)</option>
+                <option value="Cerraduras Digitales & Control Smart">Cerradura Inteligente Smart (Huella / App / Códigos)</option>
+                <option value="Instalación y Mantenimiento de Minisplits">Instalación y Servicio de Minisplits (Climas)</option>
+                <option value="Venta de Controles Remotos y Accesorios">Venta de Controles y Accesorios</option>
+                <option value="Herrería Residencial & Puertas a Medida">Herrería Residencial & Puertas a Medida</option>
+              </select>
+            </div>
+
+            <!-- Campo 2: Tipo de Inmueble -->
+            <div>
+              <label for="quote-type" class="block text-xs sm:text-sm font-bold text-[#0B2545] mb-1.5 sm:mb-2">Tipo de Inmueble *</label>
+              <select id="quote-type" class="w-full bg-[#F8FAFC] border border-slate-300 rounded-xl px-3.5 sm:px-4 py-3 sm:py-3.5 text-xs sm:text-sm text-[#0B2545] font-medium focus:outline-none focus:border-brand-orange transition-colors">
+                <option value="Casa Habitación / Residencial">Casa Habitación / Residencial</option>
+                <option value="Local Comercial / Negocio">Local Comercial / Negocio</option>
+                <option value="Bodega / Empresa / Industrial">Bodega / Empresa / Industrial</option>
+                <option value="Fraccionamiento / Privada / Condominio">Fraccionamiento / Privada / Condominio</option>
+              </select>
+            </div>
+
+            <!-- Campo 3: Nombre -->
+            <div>
+              <label for="quote-name" class="block text-xs sm:text-sm font-bold text-[#0B2545] mb-1.5 sm:mb-2">Tu Nombre *</label>
+              <input type="text" id="quote-name" required placeholder="Ej. Carlos Mendoza" class="w-full bg-[#F8FAFC] border border-slate-300 rounded-xl px-3.5 sm:px-4 py-3 sm:py-3.5 text-xs sm:text-sm text-[#0B2545] placeholder-slate-400 focus:outline-none focus:border-brand-orange transition-colors">
+            </div>
+
+            <!-- Campo 4: Detalles Adicionales -->
+            <div>
+              <label for="quote-notes" class="block text-xs sm:text-sm font-bold text-[#0B2545] mb-1.5 sm:mb-2">Detalles o Medidas Aproximadas</label>
+              <input type="text" id="quote-notes" placeholder="Ej. Portón para privada, cotización de 2 minisplits, cerradura para casa..." class="w-full bg-[#F8FAFC] border border-slate-300 rounded-xl px-3.5 sm:px-4 py-3 sm:py-3.5 text-xs sm:text-sm text-[#0B2545] placeholder-slate-400 focus:outline-none focus:border-brand-orange transition-colors">
+            </div>
+
+            <!-- Campo 5: Subir Foto de Referencia o del Espacio Actual -->
+            <div class="col-span-1 md:col-span-2">
+              <label class="block text-xs sm:text-sm font-bold text-[#0B2545] mb-1.5 sm:mb-2 flex flex-wrap items-center justify-between gap-1">
+                <span>Fotografía de Referencia o del Espacio Actual (Opcional)</span>
+                <span class="text-[11px] font-normal text-slate-500">Portón actual, fachada, diseño o medidas</span>
+              </label>
+
+              <!-- Dropzone / Selector de Archivo -->
+              <div id="dropzone-container" class="relative">
+                <input type="file" id="quote-image" accept="image/*" class="hidden">
+                
+                <!-- Área de subida inicial -->
+                <div id="upload-prompt" class="border-2 border-dashed border-slate-300 hover:border-brand-orange bg-[#F8FAFC] hover:bg-orange-50/40 rounded-2xl p-4 sm:p-5 text-center cursor-pointer transition-all duration-200 group flex flex-col items-center justify-center gap-2">
+                  <div class="w-10 sm:w-12 h-10 sm:h-12 rounded-xl bg-orange-100/80 text-brand-orange flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <i data-lucide="camera" class="w-5 sm:w-6 h-5 sm:h-6"></i>
+                  </div>
+                  <div>
+                    <p class="text-xs sm:text-sm font-bold text-[#0B2545] group-hover:text-brand-orange transition-colors">
+                      Haz clic para subir una foto o tómala con tu celular
+                    </p>
+                    <p class="text-[11px] text-slate-500 mt-0.5">
+                      Formatos compatibles: JPG, PNG, WEBP, HEIC (hasta 15MB)
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Contenedor de Previsualización (Oculto por defecto) -->
+                <div id="image-preview-container" class="hidden bg-slate-50 border border-slate-200 rounded-2xl p-3 sm:p-4 flex items-center justify-between gap-3 shadow-sm">
+                  <div class="flex items-center gap-3 min-w-0">
+                    <img id="image-preview-thumb" src="" alt="Previsualización" class="w-12 sm:w-16 h-12 sm:h-16 rounded-xl object-cover border border-slate-300 shadow-sm shrink-0">
+                    <div class="min-w-0">
+                      <p id="image-preview-name" class="text-xs sm:text-sm font-bold text-[#0B2545] truncate">foto-referencia.jpg</p>
+                      <p id="image-preview-size" class="text-[11px] text-slate-500">1.2 MB</p>
+                      <span class="inline-flex items-center gap-1 text-[10px] sm:text-[11px] font-semibold text-emerald-600 mt-0.5">
+                        <i data-lucide="check-circle-2" class="w-3 h-3"></i>
+                        Foto lista para cotización
+                      </span>
+                    </div>
+                  </div>
+                  <button type="button" id="remove-image-btn" class="p-2 sm:p-2.5 rounded-xl bg-red-50 hover:bg-red-100 text-red-600 transition-colors shrink-0" title="Eliminar foto">
+                    <i data-lucide="trash-2" class="w-4 h-4"></i>
+                  </button>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="pt-3 sm:pt-4 text-center">
+            <button type="submit" class="w-full sm:w-auto btn-primary-orange px-8 sm:px-10 py-3.5 sm:py-4 rounded-xl font-extrabold text-sm sm:text-base inline-flex items-center justify-center gap-2.5 shadow-lg">
+              <i data-lucide="message-square" class="w-4 sm:w-5 h-4 sm:h-5"></i>
+              <span>Enviar Cotización a WhatsApp</span>
+            </button>
+            <p class="text-[11px] sm:text-xs text-slate-500 mt-2.5 sm:mt-3 font-medium">Sin compromiso. Te responderemos de inmediato con presupuesto formal y asesoría técnica local.</p>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       10.1 PROCESO DE TRABAJO EN 4 PASOS
+       ========================================================================= -->
+  <section class="fixed-bg-section bg-section-proceso py-16 sm:py-24 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-3 sm:space-y-4">
+        <span class="text-brand-blue uppercase text-xs sm:text-sm font-extrabold tracking-widest reveal-init">
+          Proceso Simple y Garantizado
+        </span>
+        <h2 class="text-2xl sm:text-4xl md:text-5xl font-black text-[#0B2545] font-heading reveal-init delay-100">
+          ¿Cómo Trabajamos en <span class="text-gradient-orange">SSA Durango</span>?
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+        
+        <div class="light-card p-6 rounded-2xl relative space-y-3 sm:space-y-4 reveal-scale delay-100 border border-slate-200">
+          <div class="text-3xl sm:text-4xl font-black text-blue-200 font-heading">01</div>
+          <h4 class="text-lg sm:text-xl font-bold text-[#0B2545] font-heading">01. Contacto & Asesoría Directa</h4>
+          <p class="text-xs sm:text-sm text-slate-600">Escríbenos por WhatsApp o llámanos. Evaluamos tu requerimiento técnico para ofrecerte la solución más adecuada.</p>
+        </div>
+
+        <div class="light-card p-6 rounded-2xl relative space-y-3 sm:space-y-4 reveal-scale delay-200 border border-slate-200">
+          <div class="text-3xl sm:text-4xl font-black text-orange-200 font-heading">02</div>
+          <h4 class="text-lg sm:text-xl font-bold text-[#0B2545] font-heading">02. Visita Técnico-Comercial</h4>
+          <p class="text-xs sm:text-sm text-slate-600">Acudimos a tu domicilio o privada en Durango para tomar medidas exactas y presentarte una cotización clara sin sorpresas.</p>
+        </div>
+
+        <div class="light-card p-6 rounded-2xl relative space-y-3 sm:space-y-4 reveal-scale delay-300 border border-slate-200">
+          <div class="text-3xl sm:text-4xl font-black text-blue-200 font-heading">03</div>
+          <h4 class="text-lg sm:text-xl font-bold text-[#0B2545] font-heading">03. Instalación / Servicio Técnico</h4>
+          <p class="text-xs sm:text-sm text-slate-600">Nuestros técnicos certificados realizan la fabricación, montaje o mantenimiento con materiales reforzados y herramientas profesionales.</p>
+        </div>
+
+        <div class="light-card p-6 rounded-2xl relative space-y-3 sm:space-y-4 reveal-scale delay-400 border border-slate-200">
+          <div class="text-3xl sm:text-4xl font-black text-amber-200 font-heading">04</div>
+          <h4 class="text-lg sm:text-xl font-bold text-[#0B2545] font-heading">04. Entrega, Pruebas & Garantía</h4>
+          <p class="text-xs sm:text-sm text-slate-600">Probamos el sistema contigo, configuramos tus controles o apps móviles y te entregamos tu garantía formal por escrito.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       11. TESTIMONIOS Y CONFIANZA LOCAL
+       ========================================================================= -->
+  <section class="fixed-bg-section bg-section-testimonios py-16 sm:py-24 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-3 sm:space-y-4">
+        <span class="text-brand-orange uppercase text-xs sm:text-sm font-extrabold tracking-widest reveal-init">
+          Opiniones de Clientes Satisfechos
+        </span>
+        <h2 class="text-2xl sm:text-4xl md:text-5xl font-black text-[#0B2545] font-heading reveal-init delay-100">
+          Lo que Dicen en <span class="text-gradient-blue">Durango</span> de SSA
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+        
+        <!-- Reseña 1 -->
+        <div class="light-card p-6 sm:p-8 rounded-2xl space-y-3.5 sm:space-y-4 reveal-scale delay-100 border border-slate-200">
+          <div class="flex text-amber-400 gap-1">
+            <i data-lucide="star" class="w-4 sm:w-5 h-4 sm:h-5 fill-current"></i>
+            <i data-lucide="star" class="w-4 sm:w-5 h-4 sm:h-5 fill-current"></i>
+            <i data-lucide="star" class="w-4 sm:w-5 h-4 sm:h-5 fill-current"></i>
+            <i data-lucide="star" class="w-4 sm:w-5 h-4 sm:h-5 fill-current"></i>
+            <i data-lucide="star" class="w-4 sm:w-5 h-4 sm:h-5 fill-current"></i>
+          </div>
+          <p class="text-slate-600 text-xs sm:text-sm italic leading-relaxed">
+            "Mandé a fabricar un portón corredizo con celosía en corte láser y acabado tipo madera. El trabajo superó mis expectativas, el material es súper sólido y la automatización trabaja suave."
+          </p>
+          <div class="pt-3 sm:pt-4 border-t border-slate-100 flex items-center gap-3">
+            <div class="w-9 sm:w-10 h-9 sm:h-10 rounded-full bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-xs sm:text-sm shrink-0">RM</div>
+            <div>
+              <h5 class="text-[#0B2545] font-bold text-xs sm:text-sm">Roberto Morales</h5>
+              <p class="text-[11px] sm:text-xs text-slate-500">Residencial Las Rosas, Dgo.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reseña 2 -->
+        <div class="light-card p-6 sm:p-8 rounded-2xl space-y-3.5 sm:space-y-4 reveal-scale delay-200 border border-slate-200">
+          <div class="flex text-amber-400 gap-1">
+            <i data-lucide="star" class="w-4 sm:w-5 h-4 sm:h-5 fill-current"></i>
+            <i data-lucide="star" class="w-4 sm:w-5 h-4 sm:h-5 fill-current"></i>
+            <i data-lucide="star" class="w-4 sm:w-5 h-4 sm:h-5 fill-current"></i>
+            <i data-lucide="star" class="w-4 sm:w-5 h-4 sm:h-5 fill-current"></i>
+            <i data-lucide="star" class="w-4 sm:w-5 h-4 sm:h-5 fill-current"></i>
+          </div>
+          <p class="text-slate-600 text-xs sm:text-sm italic leading-relaxed">
+            "Compré la cerradura inteligente digital con huella para la puerta principal. La configuración con el celular fue súper fácil y el trabajo de instalación muy limpio."
+          </p>
+          <div class="pt-3 sm:pt-4 border-t border-slate-100 flex items-center gap-3">
+            <div class="w-9 sm:w-10 h-9 sm:h-10 rounded-full bg-orange-100 text-brand-orange flex items-center justify-center font-bold text-xs sm:text-sm shrink-0">AL</div>
+            <div>
+              <h5 class="text-[#0B2545] font-bold text-xs sm:text-sm">Ana Luisa Gómez</h5>
+              <p class="text-[11px] sm:text-xs text-slate-500">Lomas del Parque, Dgo.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reseña 3 -->
+        <div class="light-card p-6 sm:p-8 rounded-2xl space-y-3.5 sm:space-y-4 reveal-scale delay-300 border border-slate-200">
+          <div class="flex text-amber-400 gap-1">
+            <i data-lucide="star" class="w-4 sm:w-5 h-4 sm:h-5 fill-current"></i>
+            <i data-lucide="star" class="w-4 sm:w-5 h-4 sm:h-5 fill-current"></i>
+            <i data-lucide="star" class="w-4 sm:w-5 h-4 sm:h-5 fill-current"></i>
+            <i data-lucide="star" class="w-4 sm:w-5 h-4 sm:h-5 fill-current"></i>
+            <i data-lucide="star" class="w-4 sm:w-5 h-4 sm:h-5 fill-current"></i>
+          </div>
+          <p class="text-slate-600 text-xs sm:text-sm italic leading-relaxed">
+            "Nos realizaron el mantenimiento de los portones en el negocio y la instalación de minisplits para las oficinas. Son muy puntuales, profesionales y entregan garantía por escrito."
+          </p>
+          <div class="pt-3 sm:pt-4 border-t border-slate-100 flex items-center gap-3">
+            <div class="w-9 sm:w-10 h-9 sm:h-10 rounded-full bg-blue-100 text-brand-blue flex items-center justify-center font-bold text-xs sm:text-sm shrink-0">HE</div>
+            <div>
+              <h5 class="text-[#0B2545] font-bold text-xs sm:text-sm">Ing. Héctor Espinoza</h5>
+              <p class="text-[11px] sm:text-xs text-slate-500">Boulevard Durango, Dgo.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       12. UBICACIÓN, CONTACTO & REDES SOCIALES OFICIALES CON LOGOS
+       ========================================================================= -->
+  <section id="contacto" class="fixed-bg-section bg-section-contacto py-16 sm:py-24 border-t border-blue-900/40 text-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
+        
+        <div class="lg:col-span-5 space-y-6 sm:space-y-8 reveal-left">
+          <div class="space-y-2 sm:space-y-3">
+            <span class="text-brand-orange uppercase text-xs font-extrabold tracking-widest">Contacto Directo</span>
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white font-heading">
+              Visítanos o Contáctanos en Durango
+            </h2>
+            <p class="text-slate-300 text-xs sm:text-sm md:text-base">
+              Estamos listos para brindarte la mejor solución en portones eléctricos, cerraduras inteligentes, accesos para fraccionamientos y minisplits.
+            </p>
+          </div>
+
+          <div class="space-y-4 sm:space-y-6">
+            <div class="flex items-start gap-3.5 sm:gap-4">
+              <div class="w-10 sm:w-12 h-10 sm:h-12 rounded-xl bg-orange-500/20 text-orange-400 flex items-center justify-center shrink-0 border border-orange-500/30">
+                <i data-lucide="map-pin" class="w-5 sm:w-6 h-5 sm:h-6"></i>
+              </div>
+              <div>
+                <h5 class="text-white font-bold text-sm sm:text-base">Dirección</h5>
+                <p class="text-slate-200 text-xs sm:text-sm">Boulevard Durango #500 B, Durango, Dgo., México</p>
+                <p class="text-[11px] sm:text-xs text-slate-400">(A dos cuadras de la carretera a Mazatlán)</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5 sm:gap-4">
+              <div class="w-10 sm:w-12 h-10 sm:h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 border border-emerald-500/30">
+                <i data-lucide="phone" class="w-5 sm:w-6 h-5 sm:h-6"></i>
+              </div>
+              <div>
+                <h5 class="text-white font-bold text-sm sm:text-base">Teléfono / WhatsApp</h5>
+                <a href="https://wa.me/526183032358" target="_blank" class="text-yellow-300 font-bold text-base sm:text-lg hover:underline">
+                  618 303 2358
+                </a>
+              </div>
+            </div>
+
+            <!-- Redes Sociales Oficiales con Logos Destacados -->
+            <div class="flex items-start gap-3.5 sm:gap-4">
+              <div class="w-10 sm:w-12 h-10 sm:h-12 rounded-xl bg-sky-500/20 text-sky-400 flex items-center justify-center shrink-0 border border-sky-500/30">
+                <i data-lucide="share-2" class="w-5 sm:w-6 h-5 sm:h-6"></i>
+              </div>
+              <div>
+                <h5 class="text-white font-bold text-sm sm:text-base">Redes Sociales Oficiales</h5>
+                <div class="flex flex-wrap gap-3 mt-3">
+                  
+                  <!-- Logo Facebook Oficial -->
+                  <a href="https://www.facebook.com/Ssadur" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-[#1877F2] hover:bg-[#166fe5] text-white text-xs sm:text-sm font-bold transition-all flex items-center gap-2 shadow-md hover:scale-105" title="Facebook SSA Durango">
+                    <svg class="w-4 sm:w-5 h-4 sm:h-5 fill-current" viewBox="0 0 24 24">
+                      <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                    <span>Facebook: @Ssadur</span>
+                  </a>
+
+                  <!-- Logo Instagram Oficial -->
+                  <a href="https://www.instagram.com/ssadurango" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#FCB045] text-white text-xs sm:text-sm font-bold transition-all flex items-center gap-2 shadow-md hover:scale-105" title="Instagram SSA Durango">
+                    <svg class="w-4 sm:w-5 h-4 sm:h-5 fill-current" viewBox="0 0 24 24">
+                      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                    <span>Instagram: @ssadurango</span>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Google Maps Embed -->
+        <div class="lg:col-span-7 reveal-right mt-6 lg:mt-0">
+          <div class="bg-white/5 p-2 rounded-3xl border border-white/15 overflow-hidden shadow-2xl h-[280px] sm:h-[360px] lg:h-[420px]">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3644.025000000000!2d-104.670000!3d24.020000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x869bb7dd3b0a7ab7%3A0x6b1070e1c1c73eb2!2sBlvd.%20Durango%20500%2C%20Durango%2C%20Dgo.!5e0!3m2!1ses!2smx!4v1700000000000!5m2!1ses!2smx" 
+              width="100%" 
+              height="100%" 
+              style="border:0; border-radius: 1.25rem;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Mapa de Ubicación SSA Durango">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       13. FOOTER CON LOGO GRANDE Y CRÉDITO BLANCO
+       ========================================================================= -->
+  <footer class="bg-[#0B192C] py-12 sm:py-16 border-t border-white/10 text-slate-400 text-xs sm:text-sm relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 pb-10 sm:pb-12 border-b border-white/10">
+        
+        <!-- Logo Blanco SSA Durango (Sin Cuadro de Fondo) -->
+        <div class="space-y-4 sm:col-span-2">
+          <img src="assets/images/logo-ssa-white.png" alt="SSA Durango Logo" class="h-14 sm:h-16 md:h-20 w-auto object-contain">
+          <p class="text-slate-300 text-xs sm:text-sm max-w-md leading-relaxed">
+            SSA Durango — Servicios, Soluciones y Automatización. Fabricación de portones eléctricos residenciales y comerciales, Línea PREMIUM con celosías CNC, control de acceso para fraccionamientos, cerraduras inteligentes digitales, servicio de minisplits y herrería arquitectónica.
+          </p>
+          <p class="text-xs text-brand-orange font-bold">
+            Tecnología • Seguridad • Confianza
+          </p>
+        </div>
+
+        <div class="space-y-2.5 sm:space-y-3">
+          <h5 class="text-white font-bold text-sm sm:text-base font-heading">Enlaces Rápidos</h5>
+          <ul class="space-y-1.5 sm:space-y-2 text-xs">
+            <li><a href="#inicio" class="hover:text-brand-orange transition-colors">Inicio</a></li>
+            <li><a href="#servicios" class="hover:text-brand-orange transition-colors">Servicios Principales</a></li>
+            <li><a href="#portones" class="hover:text-brand-orange transition-colors">Portones con Batería</a></li>
+            <li><a href="#premium-celosias" class="text-amber-300 font-semibold hover:text-amber-200 transition-colors">✨ Línea Premium & Celosías</a></li>
+            <li><a href="#fraccionamientos" class="text-sky-300 font-semibold hover:text-sky-200 transition-colors">🏢 Fraccionamientos & Privadas</a></li>
+            <li><a href="#cerraduras" class="hover:text-brand-orange transition-colors">Cerraduras Inteligentes</a></li>
+            <li><a href="#climas" class="hover:text-brand-orange transition-colors">Climas (Minisplits)</a></li>
+            <li><a href="#red-aliados" class="text-amber-400 font-bold hover:text-amber-300 transition-colors">🤝 Red de Aliados B2B</a></li>
+            <li><a href="#cotizador" class="hover:text-brand-orange transition-colors">Cotizador Rápido</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2.5 sm:space-y-3">
+          <h5 class="text-white font-bold text-sm sm:text-base font-heading">Horarios de Atención</h5>
+          <ul class="space-y-1.5 sm:space-y-2 text-xs text-slate-300">
+            <li>Lunes a Viernes: 8:00 AM - 7:00 PM</li>
+            <li>Sábados: 8:00 AM - 3:00 PM</li>
+            <li>Domingos: Atención previa cita</li>
+            <li class="pt-1.5 text-green-400 font-semibold flex items-center gap-1.5">
+              <i data-lucide="check-circle" class="w-3.5 h-3.5 shrink-0"></i>
+              <span>WhatsApp: 618 303 2358</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Leyenda de Derechos y Créditos de Blueberry Digital en COLOR BLANCO -->
+      <div class="pt-6 sm:pt-8 flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 text-[11px] sm:text-xs text-slate-400 text-center sm:text-left">
+        <p>© 2026 SSA Durango (Servicios, Soluciones y Automatización). Todos los derechos reservados.</p>
+        
+        <p class="text-white font-medium">
+          Desarrollado por <a href="https://wa.me/+526182103942/" target="_blank" rel="noopener noreferrer" class="text-white font-bold hover:text-orange-400 transition-colors">Blueberry Digital</a>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       14. BOTONES FLOTANTES: REPARACIÓN RÁPIDA (IZQ) & WHATSAPP (DER)
+       ========================================================================= -->
+  <!-- Botón Flotante de Reparación Urgente (Inferior Izquierda) -->
+  <div class="floating-repair-btn">
+    <a href="https://wa.me/526183032358?text=Hola%20SSA%20Durango,%20mi%20portón%20está%20fallando%20y%20necesito%20reparación%20o%20mantenimiento%20urgente" target="_blank" rel="noopener noreferrer" class="repair-btn-pill shadow-2xl" title="Reparación Rápida de Portones">
+      <span class="repair-pulse"></span>
+      <i data-lucide="wrench" class="w-4 h-4 sm:w-5 sm:h-5 text-amber-300 shrink-0"></i>
+      <div class="flex flex-col text-left leading-tight">
+        <span class="text-[10px] text-amber-200 uppercase font-black tracking-wider">¿Tu portón no abre?</span>
+        <span class="text-xs sm:text-sm font-extrabold text-white">Reparación Rápida</span>
+      </div>
+    </a>
+  </div>
+
+  <!-- Botón Flotante de WhatsApp con Pulso (Inferior Derecha) -->
+  <div class="floating-whatsapp">
+    <a href="https://wa.me/526183032358?text=Hola%20SSA%20Durango,%20deseo%20solicitar%20información%20y%20cotización" target="_blank" rel="noopener noreferrer" class="relative block w-12 sm:w-14 md:w-16 h-12 sm:h-14 md:h-16 bg-[#25D366] rounded-full shadow-2xl flex items-center justify-center text-white" title="Cotizar por WhatsApp">
+      <span class="whatsapp-pulse"></span>
+      <svg class="w-7 sm:w-8 md:w-9 h-7 sm:h-8 md:h-9 relative z-10 fill-current" viewBox="0 0 24 24">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- Swiper.js JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Script Principal -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
