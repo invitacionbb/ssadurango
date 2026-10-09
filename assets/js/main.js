@@ -136,11 +136,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const slideButtons = document.querySelectorAll('.hero-tab-btn');
         slideButtons.forEach((btn, idx) => {
           if (idx === realIndex) {
-            btn.classList.add('bg-brand-orange', 'text-white', 'border-brand-orange', 'shadow-lg', 'shadow-orange-500/30');
-            btn.classList.remove('bg-white/5', 'text-slate-300', 'border-white/10');
+            btn.classList.add('active');
           } else {
-            btn.classList.remove('bg-brand-orange', 'text-white', 'border-brand-orange', 'shadow-lg', 'shadow-orange-500/30');
-            btn.classList.add('bg-white/5', 'text-slate-300', 'border-white/10');
+            btn.classList.remove('active');
           }
         });
       },
