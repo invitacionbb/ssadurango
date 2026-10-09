@@ -222,6 +222,44 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  // 4.2 Carruseles Móviles Adicionales (< 768px): Fraccionamientos, Climas, Proceso SSA y Testimonios
+  const additionalMobileSwipers = [
+    { selector: '.fraccionamientos-swiper', next: '.fraccionamientos-next-btn', prev: '.fraccionamientos-prev-btn', pagination: '.fraccionamientos-swiper-pagination' },
+    { selector: '.climas-swiper', next: '.climas-next-btn', prev: '.climas-prev-btn', pagination: '.climas-swiper-pagination' },
+    { selector: '.proceso-swiper', next: '.proceso-next-btn', prev: '.proceso-prev-btn', pagination: '.proceso-swiper-pagination' },
+    { selector: '.testimonios-swiper', next: '.testimonios-next-btn', prev: '.testimonios-prev-btn', pagination: '.testimonios-swiper-pagination' }
+  ];
+
+  additionalMobileSwipers.forEach(cfg => {
+    const swiperEl = document.querySelector(cfg.selector);
+    if (swiperEl && typeof Swiper !== 'undefined') {
+      new Swiper(cfg.selector, {
+        slidesPerView: 1.06,
+        spaceBetween: 16,
+        grabCursor: true,
+        speed: 400,
+        navigation: {
+          nextEl: cfg.next,
+          prevEl: cfg.prev,
+        },
+        pagination: {
+          el: cfg.pagination,
+          clickable: true,
+        },
+        breakpoints: {
+          768: {
+            enabled: false,
+          }
+        }
+      });
+    }
+  });
+
+  if (typeof lucide !== 'undefined') {
+    lucide.createIcons();
+  }
+
+
 
   // 5. Navbar Sticky Effect on Scroll
   const navbar = document.getElementById('main-nav');
