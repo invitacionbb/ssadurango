@@ -617,4 +617,119 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   color: #FFFFFF !important;
 }
 
+/* ==========================================================================
+   CARRUSELES MÓVILES (< 768px) & GRIDS DESKTOP (>= 768px)
+   (Fraccionamientos, Climas, Proceso SSA, Testimonios)
+   ========================================================================== */
+.fraccionamientos-swiper,
+.climas-swiper,
+.proceso-swiper,
+.testimonios-swiper {
+  width: 100%;
+}
+
+@media (max-width: 767.98px) {
+  .fraccionamientos-swiper,
+  .climas-swiper,
+  .proceso-swiper,
+  .testimonios-swiper {
+    overflow: hidden !important;
+    padding-bottom: 0.5rem;
+  }
+  .fraccionamientos-swiper .swiper-slide,
+  .climas-swiper .swiper-slide,
+  .proceso-swiper .swiper-slide,
+  .testimonios-swiper .swiper-slide {
+    height: auto !important;
+    display: flex;
+    flex-direction: column;
+  }
+  .fraccionamientos-swiper .reveal-scale,
+  .climas-swiper .reveal-scale,
+  .proceso-swiper .reveal-scale,
+  .testimonios-swiper .reveal-scale {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .fraccionamientos-swiper-pagination .swiper-pagination-bullet,
+  .climas-swiper-pagination .swiper-pagination-bullet,
+  .proceso-swiper-pagination .swiper-pagination-bullet,
+  .testimonios-swiper-pagination .swiper-pagination-bullet {
+    width: 8px !important;
+    height: 8px !important;
+    background: #CBD5E1 !important;
+    opacity: 0.5 !important;
+    border-radius: 9999px !important;
+    margin: 0 4px !important;
+    transition: all 0.3s ease !important;
+  }
+  .fraccionamientos-swiper-pagination .swiper-pagination-bullet-active,
+  .climas-swiper-pagination .swiper-pagination-bullet-active,
+  .proceso-swiper-pagination .swiper-pagination-bullet-active,
+  .testimonios-swiper-pagination .swiper-pagination-bullet-active {
+    width: 24px !important;
+    background: var(--color-accent-orange) !important;
+    opacity: 1 !important;
+    box-shadow: 0 0 10px rgba(255, 102, 0, 0.45) !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .fraccionamientos-swiper,
+  .climas-swiper,
+  .proceso-swiper,
+  .testimonios-swiper {
+    overflow: visible !important;
+  }
+  .fraccionamientos-swiper .swiper-wrapper.fraccionamientos-grid-wrapper,
+  .proceso-swiper .swiper-wrapper.proceso-grid-wrapper {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 1.5rem !important;
+    transform: none !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  .climas-swiper .swiper-wrapper.climas-grid-wrapper {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 1rem !important;
+    transform: none !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  .testimonios-swiper .swiper-wrapper.testimonios-grid-wrapper {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 1.5rem !important;
+    transform: none !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  @media (min-width: 1024px) {
+    .fraccionamientos-swiper .swiper-wrapper.fraccionamientos-grid-wrapper,
+    .proceso-swiper .swiper-wrapper.proceso-grid-wrapper {
+      grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+      gap: 2rem !important;
+    }
+    .climas-swiper .swiper-wrapper.climas-grid-wrapper {
+      grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+      gap: 1rem !important;
+    }
+    .testimonios-swiper .swiper-wrapper.testimonios-grid-wrapper {
+      gap: 2rem !important;
+    }
+  }
+  .fraccionamientos-swiper .swiper-slide,
+  .climas-swiper .swiper-slide,
+  .proceso-swiper .swiper-slide,
+  .testimonios-swiper .swiper-slide {
+    width: auto !important;
+    height: auto !important;
+    margin: 0 !important;
+    transform: none !important;
+  }
+}
+
+
 
